@@ -1,0 +1,326 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title>Le poesie giovanili di Ugo Foscolo</title>
+		<meta charset="utf-8">
+    <meta name="DC.Creator" content="Filippo Pelacci"/>
+    <meta name="DC.Title" content="Le poesie giovanili di Ugo Foscolo"/>
+    <meta name="DC.Subject" content="Le poesie di Ugo Foscolo e il contesto storico-artistico"/>
+    <meta name="DC.Description" content="Il sito web contiene le poesie giovanili di Foscolo, analizzate con VoyanTool e qui pubblicate a partire da un nuovo studio del testo. Accanto alle poesie si presenta una serie di ritratti utili per una migliore comprensione dei testi, nonché la descrizione dei manoscritti e dei relativi fondi archivistici.">
+    <meta name="DC.Publisher" content="UNIBO">
+    <meta name="DC.Date" content="2023.08.30">
+    <meta name="DC.Type" content="Sito web">
+    <meta name="DC.Format" content="HTML/CSS/JS">
+    <link rel="DC.Identifier" href="https://github.com/filippodhpc/foscolo-dh.git">
+    <link rel="DC.Source" href="https://www.w3schools.com/"/>
+    <link rel="DC.Source" href="https://getbootstrap.com/"/>
+    <link rel="DC.Source" href="https://www.europeana.eu/it"/>
+    <link rel="DC.Source" href="http://www.bibliotecaitaliana.it/">
+    <meta name="DC.Source" content="IT\ICCU\SBL\0524157"/>
+    <meta name="DC.Source" content="ISBN\9788844600174884460017X"/>
+    <meta name="DC.Source" content="IT\ICCU\RML\0062367"/>
+    <meta name="DC.Relation" content="IT\ICCU\MIL\0027469"/>
+    <meta name="DC.Relation" content="ISBN\88-491-2023-0"/>
+    <link rel="DC.Relation" href="https://wikifoscolo.labcd.unipi.it/index.php/la-chioma-di-berenice/"/>
+    <link rel="DC.Coverage" href="http://vocab.getty.edu/page/tgn/7003127/">
+    <meta name="DC.Language" content="it"/> 
+    <meta name="DC.Rights" content="CC_BY-SA-3.0">
+		<!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="style/bootstrap.min.css"/>
+   <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style/prova.css"/>
+    <link rel="icon" type="image/x-icon" href="img/firma.jpg">
+	</head>
+	<body>
+    <div class="bg">
+      <header>
+        <h2>Le poesie giovanili di Ugo Foscolo</h2> 
+        <h4>Testi e contesti</h4> 
+      </header>
+    </div>
+			<nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true" href="#">Progetto</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Collezione
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item attiva" href="list-items.html">Lista</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item disabled" aria-disabled="true" href="#">Soggetti</a></li>
+                  <li><a class="dropdown-item disabled" aria-disabled="true" href="#">Date</a></li>
+                </ul>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true">Bibliografia</a>
+                </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Recenti
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="item-metadati-foscolo.html">Ritratto di Ugo Foscolo</a></li>
+                  <li><a class="dropdown-item" href="item-metadati-david.html">Napoleone nel suo studio</a></li>
+                  <li><a class="dropdown-item" href="item-bonaparte-liberatore.html">Bonaparte Liberatore</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+              Newsletter
+            </button>
+            <div class="modal fade" id="exampleModalToggle" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Newsletter</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Inserisci qui la tua email per completare l'iscrizione</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                    <button type="button" class="btn btn-success" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Invia</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Newsletter</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Iscrizione completata con successo!
+                  </div>
+                  <div class="modal-footer">
+                    <a href="list-items.html"><button class="btn btn-success">Torna alla navigazione</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--fine modale-->
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Cerca</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <main class="background-gray pb-5">
+      <section class="container-fluid">
+        <div class="row">
+          <div class="col-md-2 col-sm-12 col-xs-12 mt-4">
+            <aside>
+              <div>
+                <ul class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page"><a href="list-items.html">Lista</a></li>
+                </ul>
+              </div>
+              <div class="ex3">
+                <h3>Filtra la lista</h3>
+                <div class="block">
+                  <button class="btn btn-success btn-block mb-2 dark-green" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Soggetto
+                  </button>
+                </div>
+                <div class="collapse" id="collapseExample">
+                  <div class="filtro-aside">
+                    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+                      <ul id="myUL">
+                        <li><a href="#">Ugo Foscolo</a></li>
+                        <li><a href="#">Napoleone Bonaparte</a></li>
+                        <li><a href="#">Rivoluzione francese</a></li>
+                        <li><a href="#">Andrea Foscolo</a></li>
+                        <li><a href="#">Neoclassicismo</a></li>
+                        <li><a href="#">Scultura</a></li>
+                        <li><a href="#">Pittura</a></li>
+                        <li><a href="#">XVIII secolo</a></li>
+                        <li><a href="#">XIX secolo</a></li>
+                        <li><a href="#">Costantino Naranzi</a></li>
+                        <li><a href="#">Biblioteca Vaticana</a></li>
+                      </ul>
+                  </div>
+                </div>
+                 <div class="block">
+                  <button class="btn btn-success btn-block mt-2 mb-2 dark-green" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                  Data
+                  </button>
+                </div>
+                  <div class="collapse" id="collapseExample2">
+                    <div class="checkbox-container" role="group" aria-label="Basic checkbox toggle button group">
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+                        <label class="form-check-label" for="check1">1794</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+                        <label class="form-check-label" for="check1">1795</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+                        <label class="form-check-label" for="check1">1796</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+                        <label class="form-check-label" for="check1">1797</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+                        <label class="form-check-label" for="check1">1798</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+                        <label class="form-check-label" for="check1">1799</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+                        <label class="form-check-label" for="check1">1800</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+                        <label class="form-check-label" for="check1">1801</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+                        <label class="form-check-label" for="check1">1802</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+                        <label class="form-check-label" for="check1">1812</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+                        <label class="form-check-label" for="check1">1851</label>
+                      </div>
+                    </div>
+                    <div class="form-check mb-4">
+                      <form class="d-flex" role="search">
+                        <input class="form-control" type="search" placeholder="Cerca" aria-label="Search">
+                        <button class="btn btn-outline-success ms-2" type="submit">Cerca</button>
+                      </form>
+                    </div>
+                  </div>
+              </div>
+            </aside>
+          </div>
+          <div class="col-md-8 col-sm-12 col-xs-12 mt-4 main">
+            <div class="ex3">
+              <div id="myBtnContainer">
+                <a href="list-items.html"><button class="btn btn-outline-success">Tutti</button></a>
+                <a href="list-items-poesie.html"><button class="btn btn-outline-success">Testi</button></a>
+                <a href="list-items-ritratti.html"><button class="btn btn-outline-success active">Ritratti</button></a>
+                <a href="#"><button class="btn btn-outline-success disabled" aria-disabled="true">Manoscritti</button></a>
+              </div>
+              <div class="row row-cols-md-2 row-cols-sm-1 row-cols-lg-3 mt-4">
+                    <div class="col mb-2">
+                      <div class="card">
+                        <div class="background2">
+                          <div class="card-body">
+                            <div class="card-metadata">
+                              <h5 class="card-title">Napoleone nel suo studio</h5>
+                              <div class="card-text mt-1">Data: <strong>1812</strong></div>
+                              <div class="card-text mt-1">Tecnica: <strong>Olio su tela</strong></div>
+                              <div class="card-text mt-1">Autore: <strong>Jacques-Louis David</strong></div>
+                            </div>
+                          </div>
+                          <p class="d-inline-glex gap-1">
+                            <a class="btn btn-outline-success card-accedi" href="item-metadati-david.html" title="accedi ai testi In morte del padre" role="button">Accedi</a>
+                          </p>   
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col mb-2">
+                      <div class="card">
+                        <div class="background3">
+                          <div class="card-body">
+                            <h5 class="card-title">Ritratto di Ugo Foscolo</h5>
+                            <div class="card-text mt-1">Data: <strong>1801-1802</strong></div>
+                            <div class="card-text mt-1 mb-2">Tecnica: <strong>Pittura</strong></div>
+                             <div class="card-text mt-1">Autore: <strong>Andrea Appiani</strong></div>
+                            <p class="d-inline-glex gap-1">
+                              <a class="btn btn-outline-success card-accedi mt-2" href="item-metadati-foscolo.html">Accedi</a>
+                            </p>   
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col mb-2">
+                      <div class="card">
+                        <div class="background4">
+                          <div class="card-body">
+                            <h5 class="card-title">Busto di Ugo Foscolo</h5>
+                            <div class="card-text mt-1">Data: <strong>1861</strong></div>
+                            <div class="card-text mt-1 mb-2">Tecnica: <strong>Scultura su marmo</strong></div>
+                             <div class="card-text mt-1">Autore: <strong>Marco Pasato</strong></div>
+                            <p class="d-inline-glex gap-1">
+                              <a class="btn btn-outline-success card-accedi" href="#">Accedi</a>
+                            </p>   
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-2 col-sm-12 col-xs-12 mt-4">
+              <h3>Testi e contesti</h3>
+              <div class="vertical-menu">
+               <a href="index.html"><button type="button" class="btn btn-outline-success btn-block mt-4">Torna alla timeline</button></a>
+                <a href="https://www.treccani.it/enciclopedia/ugo-foscolo_%28Dizionario-Biografico%29/" title="Foscolo, Ugo in DBI" target="_blank"><button type="button" class="btn btn-outline-success btn-block mt-4">Vai al DBI</button></a>
+                <a href="https://www.treccani.it/enciclopedia/rivoluzione-francese_%28Enciclopedia-Italiana%29/" title="vai alla voce dell'Enciclopedia Treccani" target="_blank"><button type="button" class="btn btn-outline-success btn-block mt-4">La Rivoluzione Francese</button></a>
+                <a href="https://it.wikipedia.org/wiki/Caduta_della_Repubblica_di_Venezia" title="vai alla pagina wikipedia.it" target="_blank"><button type="button" class="btn btn-outline-success btn-block mt-4">Venezia e la Rivoluzione</button></a>
+                <a href="https://it.wikipedia.org/wiki/Trattato_di_Campoformio" title="vai alla pagina wikipedia.it" target="_blank"><button type="button" class="btn btn-outline-success btn-block mt-4">Il trattato di Campoformio</button></a>
+                <a href="https://www.treccani.it/enciclopedia/repubblica-di-venezia" title="vai alla voce dell'Enciclopedia Treccani" target="_blank"><button type="button" class="btn btn-outline-success btn-block mt-4">La Repubblica di Venezia</button></a>
+              </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="credit">
+      <span id="link"><a href="#" title="vai ai credits" class="credits">Credits</a> | <a href="#" title="vai alle licenze" class="credits">Licenze</a></span>
+    </div>
+      <footer class="centro">&copy; Filippo Pelacci 2023 - Corso di Digital Humanities e Patrimonio Culturale</footer>
+    <!--script bs-->
+    <script src="style/bootstrap.bundle.min.js"></script>
+    <script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+  </body>
+</html>

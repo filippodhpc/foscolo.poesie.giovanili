@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<TEI xmlns="http://www.tei-c.org/ns/1.0">
+		<teiHeader>
+			<fileDesc>
+				<titleStmt>
+					<title>Bonaparte liberatore. Edizione digitale</title>
+					<author ref="#UF">Foscolo, Ugo.</author>
+					<respStmt>
+						<resp>marcatura XML/TEI</resp>
+						<name xml:id="FP">Filippo Pelacci</name>
+					</respStmt>
+				</titleStmt>
+				<publicationStmt>
+					<publisher xml:id="UniBO">UniBO</publisher>
+					<pubPlace>Bologna</pubPlace>
+					<date>2023</date>
+					<availability><p>Questa risorsa digitale è liberamente accessibile per uso personale o scientifico. Ogni uso commerciale è vietato</p></availability>
+				</publicationStmt>	
+				<sourceDesc>
+						<listWit>
+							<witness xml:id="BO"><soCalled>Edizione bolognese</soCalled>
+								<bibl>
+									<title type="main"><lb/>BONAPARTE <lb/>LIBERATORE</title>
+									<title type="sub"><lb/>ODA <lb/>DEL LIBER'UOMO <lb/>NICCOL&#210; UGO FOSCOLO</title>
+									<author>Foscolo, UGo</author>
+									<pubPlace>Italia</pubPlace>
+									<date when="1797">Anno primo dell'italica libertà</date>
+									<publisher>Marsiglj</publisher>
+								</bibl>
+							</witness>
+							<witness xml:id="GE"><soCalled>Edizione genovese</soCalled>
+								<bibl>
+									<title type="main"><lb/>A <lb/>BONAPARTE <lb/>LIBERATORE</title>
+									<title type="sub"><lb/>ODA <lb/>DI UGO FOSCOLO <lb/>Sesta edizione</title>
+									<author>Foscolo, UGO</author>
+										<pubPlace>Italia</pubPlace>
+										<date when="1799">Anno VIII</date>
+										<publisher>Stamperia Frugoni</publisher>
+								</bibl>
+							</witness>
+						</listWit>
+						<listPerson>
+							<person xml:id="UF">
+								<persName sameAs="https://viaf.org/viaf/36929008/">Ugo Foscolo (1778-1827)</persName>
+							</person>
+							<person xml:id="FI">
+								<persName sameAs="https://viaf.org/viaf/16073751/">Ferdinando Borbone (1751-1825)</persName>
+							</person>
+							<person xml:id="PVI">
+								<persName sameAs="https://viaf.org/viaf/89089872/">Giovanni Angelo Braschi</persName>
+							</person>
+						</listPerson>
+				</sourceDesc>
+			</fileDesc>
+			<encodingDesc>
+				<p>Si codifica anzitutto la struttura testuale, marcando versi e strofe. A queste si aggiunge la codifica delle varianti testuali nelle due diverse edizioni</p>
+				<variantEncoding method="parallel-segmentation" location="internal"/>
+			</encodingDesc>
+			<profileDesc>
+				<langUsage>
+					<language ident="ita">Italiano</language>
+				</langUsage>
+			</profileDesc>
+			<revisionDesc>
+				<change when="2023-09-04" who="#FP">Ultima revisione</change>
+			</revisionDesc>
+		</teiHeader>
+		<text>
+			<front>
+				<app>
+					<rdg wit="#BO">
+						<div type="dedication">
+							<opener>
+								<salute><lb/>ALLA <lb/>CITT&#192; DI REGGIO</salute>
+							</opener>
+							<p>A voi, che primi veri Italiani, e liberi cittadini vi siete mostrati, e con esempio magnanimo scuoteste l'Italia già sonnacchiosa, a voi dedico, che a voi spetta, quest'Oda ch'io <choice><sic>sù</sic><corr>su</corr></choice>libera cetra osai sciogliere al nostro Liberatore. Giovane, qual mi son io, nato in Grecia, educato fra Dalmati, e balbettante da soli quattr'anni in Italia, né dovea, né poteva cantare ad uomini liberi ed Italiani. Ma l'alto genio di Libertà che m'infiamma e che mi rende Uomo, Libero, e Cittadino di patria non in sorte toccata, ma eletta, mi dà i diritti dell'Italiano e mi presta repubblicana energia, ond'io alzato su me medesimo canto BONAPARTE LIBERATORE e consacro i miei canti alla Città animatrice d'Italia.</p>
+							<closer>
+								<signed><persName ref="#UF">Niccolò Ugo Foscolo</persName></signed>
+							</closer></div>
+					</rdg>
+					<rdg wit="GE">
+						<div type="dedication">
+							<opener>
+								<salute>A BONAPARTE</salute>
+							</opener>
+							<p>Io ti dedicava questa Oda quando tu, vinte dodici giornate e venticinque combattimenti, espugnate dieci fortezze, conquistate otto provincie, riportate centocinquanta insegne, quattrocento cannoni e centomila prigionieri, annientati cinque eserciti, disarmato il re sardo, atterrito <persName ref="FI">Ferdinando IV</persName>, umiliato <persName ref="PVI">Pio VI</persName>, rovesciate due antiche repubbliche, e forzato l'imperatore alla tregua, davi pace a' nemici, costituzione alla Italia, e onnipotenza al popolo francese.</p>
+							<p>Ed ora pur te la dedico non per lusingarti col suono delle tue gesta, ma per mostrarti col paragone la miseria di questa Italia che giustamente aspetta restaurata la libertà da chi primo la fondò.</p>
+							<p>Possa io intuonare di nuovo il canto della vittoria quando tu tornerai a passare le Alpi, a vedere, ed a vincere!</p>
+							<p>
+							Vero è che, più che della tua lontananza, la nostra rovina è colpa degli uomini guasti dall'antico servaggio e dalla nuova licenza. Ma poiché la nostra salute sta nelle mani di un conquistatore, ed è vero pur troppo che il fondatore di una repubblica deve essere un despota, noi e per i tuoi beneficj, e pel tuo Gènio che sovrasta tutti gli altri della età nostra siamo in dovere di invocarti, e tu in dovere di soccorrerci non solo perché partecipi del sangue italiano, e la rivoluzione d'Italia è opera tua, ma per fare che i secoli tacciano di quel
+							<title>Trattato</title>
+							che trafficò la mia patria, insospettì le nazioni, e scemò dignità al tuo nome.
+							</p>
+							<p>E' pare che la tua fortuna, la tua fama, e la tua virtù te ne m abbiano in tempo aperto il campo. Tu stai sopra un seggio donde e col braccio e col senno puoi restituire libertà a noi, prosperità e fede alla tua Repubblica, e pace all'Europa.</p>
+							<p>Pure ne per te glorioso, ne per me onesto sarebbe s'io adesso non t'offerissi che versi di laude. Tu se' ornai più grande per i tuoi fatti, che per gli altrui detti: ne a te quindi s'aggiugnerebbe elogio, ne a me altro verrebbe tranne la taccia di adulatore. Onde t'invierò un consiglio, che essendo da te liberalmente accolto, mostrerai che non sono sempre insociabili virtù e potenza, e ch'io, quantunque oscurissimo, sono degno di laudarti perché so dirti fermamente la verità.</p>
+							<p>Uomo tu sei e mortale e nato in tempi ove la universale scelleratezza sommi ostacoli frappone alle magnanime imprese, e potentissimi incitamenti al mal fare. Quindi o il sentimento della tua superiorità, o la conoscenza del comune avvilimento potrebbero trarti forse a cosa che tu stesso abborri. Ne Cesare prima di passare il Rubicone ambiva alla dittatura del mondo.</p>
+							<p>Anche negli infelicissimi tempi le grandi rivoluzioni destano feroci petti ed altissimi ingegni. Che se tu aspirando al sommo potere sdegni generosamente i primi, aspirando alla immortalità, il che è più degno delle sublimi anime, rispetterai i secondi. Avrà il nostro secolo un Tacito, il quale commetterà la tua sentenza alla severa posterità.</p>
+						<closer>
+							<salute>Salute</salute>
+							<dateline>Genova 5 agghiacciatore anno VIII.</dateline>
+							<signed><persName ref="#UF">UGO FOSCOLO</persName></signed>
+						</closer>
+					</div>
+					</rdg>
+				</app>
+			</front>
+			<body>
+				<head>Oda</head>
+				<lg type="free" n="1">
+					<l>Dove tu, diva, <app><rdg wit="#BO">dall'antica</rdg><rdg wit="#GE">da l'antica</rdg></app> e forte</l>
+					<l>Dominatrice libera del mondo</l>
+					<l>Felice <app><rdg wit="#BO">all'ombra</rdg><rdg wit="#GE">a l'ombra</rdg></app> di tue sacre penne,</l>
+					<l>Dove <app><rdg wit="#BO">fuggisti</rdg><rdg wit="#GE">fuggivi</rdg></app>, quando ferreo pondo</l>
+					<l>Di <app><rdg wit="#BO">vile e fera</rdg><rdg wit="#GE">dittatoria</rdg></app> tirannia le tenne</l>
+					<l>Umil la testa fra servaggio e morte?</l>
+					<l>Te seguir le risorte</l>
+					<l>Ombre de' Bruti, ai secoli mostrando</l>
+					<l>Alteramente il brando</l>
+					<l>Del padre tinto e <app><rdg wit="#BO">del figliuol</rdg><rdg wit="#GE">dei figliuoi</rdg></app> nel sangue;</l>
+					<l>Te, o Libertà, se <app><rdg wit="#BO">fra</rdg><rdg wit="#GE">per le</rdg></app> gelid'onde</l>
+					<l>Del Danubio e del Reno</l>
+					<l>Gisti <app><rdg wit="#BO">con</rdg><rdg wit="#GE">fra</rdg></app> genti indomite guerriere;</l>
+					<l>Te se raccolse nel <app><rdg wit="#BO">sanguigno</rdg><rdg wit="#GE">sanguineo</rdg></app> seno</l>
+					<l>Brittannia, e t'ascondea mortifer angue;</l>
+					<l>Te se al furor di mercenarie spade</l>
+					<l><app><rdg wit="#BO">Dell'Oceàn dalle vietate sponde</rdg><rdg wit="#GE">De l'oceano da le ignote sponde</rdg></app></l>
+					<l>T'invitar meste, e del tuo nome altere</l>
+					<l>Le americane libere contrade;</l>
+					<l>O le batave fonti,</l>
+					<l>O ti furo ricetto</l>
+					<l>Coronati di gel gli elvezj monti;</l>
+					<l>Or che del vero illuminar l'aspetto</l>
+					<l>Non è delitto, or io te, diva, invoco:</l>
+					<l><app><rdg wit="#BO">Vieni</rdg><rdg wit="#GE">Scendi</rdg></app>, e la lingua e il petto</l>
+					<l>Mi snoda e infiamma di tuo santo foco.</l>
+				</lg>
+				<lg type="free" n="2">
+					<l>Ma tu <app><rdg wit="#BO">dell'Alpi dall'eccelse</rdg><rdg wit="#GE">de l'alpi da l'aerie</rdg></app> cime</l>
+					<l>Al rintronar di trombe e di timballi</l>
+					<l>Ausonia guati e giù piombi col volo;</l>
+					<l>Anelanti ti sieguono i cavalli</l>
+					<l>Che Palla sferza, e <app><rdg wit="#BO">sull'Esperio</rdg><rdg wit="#GE">sul latino</rdg></app> suolo</l>
+					<l>Marte furente orme di foco imprime:</l>
+					<l>Odo canto sublime</l>
+					<l>Di mille e mille che vittoria, o morte</l>
+					<l><app><rdg wit="#BO">Dall'italiche</rdg><rdg wit="#GE">Da l'italiche</rdg></app> porte</l>
+					<l>Giuran brandendo la terribil asta;</l>
+					<l>E guerrier veggo di fiorente alloro</l>
+					<l>Cinto le bionde chiome</l>
+					<l>Su cui purpuree tremolando vanno</l>
+					<l>Candide azzurre piume; <app><rdg wit="#BO">al sol</rdg><rdg wit="#GE">egli al</rdg></app> tuo nome</l>
+					<l>Suo brando snuda e abbatte, arde, devasta;</l>
+					<l>Senno de' suoi corsier governa il morso,</l>
+					<l><app><rdg wit="#BO">Gloria il precede</rdg><rdg wit="#GE">Ardir li 'ncalza</rdg></app>, e de' marziali il coro</l>
+					<l>Genj <app><rdg wit="#BO">l'accerchia</rdg><rdg wit="#GE">lo irraggia</rdg></app>, e dietro <app><rdg wit="#BO">a</rdg><rdg wit="#GE"/></app>lui si stanno</l>
+					<l>In aer librate con perpetuo corso</l>
+					<l>Sorte, Vittoria, e Fama.</l>
+					<l>Or che fia dunque, o diva?</l>
+					<l>Onde <app><rdg wit="#BO">tant'ira</rdg><rdg wit="#GE">tal'ira</rdg></app>? e qual <app><rdg wit="#BO">destin</rdg><rdg wit="#GE">fato</rdg></app> te chiama</l>
+					<l>A trar tant'armi da straniera riva</l>
+					<l>Su questa un dì reina, or nuda e schiava</l>
+					<l>Italia, ahi! solo <app><rdg wit="#BO">all'abbominio</rdg><rdg wit="#GE">al vituperio</rdg></app> viva,</l>
+					<l><app><rdg wit="#BO">all'infamia</rdg><rdg wit="#GE">Al vituperio</rdg></app> che piangendo lava!</l>
+				</lg>
+				<lg type="free" n="3">
+					<l>E depor le corone in Campidoglio,</l>
+					<l>E i rè in trionfo tributarj e schiavi</l>
+					<l>Roma già vide, e rovesciati i troni:</l>
+					<l>Re–sacerdoti or con mentite chiavi</l>
+					<l>Di oro ingordi e di sangue, altri Neroni,</l>
+					<l>Grandeggiar mira in usurpato soglio:</l>
+					<l>Siede a destra l'Orgoglio</l>
+					<l>Cinto di stola, e ferri e nappi accoglie</l>
+					<l>Sotto le ricche spoglie,</l>
+					<l>Vendendo il cielo, ai popoli rapite;</l>
+					<l>Sgabello al seggio fanno e fondamento</l>
+					<l>Cataste di frementi</l>
+					<l>Capi <app resp="#FP"><rdg wit="#BO">cogli</rdg><rdg wit="#GE">co gli</rdg></app> occhi <app><rdg wit="#BO">nelle treccie</rdg><rdg wit="#GE">ne le trecce</rdg></app> involti,</l>
+					<l>E tepidi cadaveri innocenti,</l>
+					<l>Cui sospiran nel fianco <app><rdg wit="#BO">ampie</rdg><rdg wit="#GE">alte</rdg></app> ferite</l>
+					<l>Pel fulminar di pontificio labbro;</l>
+					<l>E misti in pianto e in sangue, atro cemento,</l>
+					<l>Calcati busti e cranj <app><rdg wit="#BO">dissepolti</rdg><rdg wit="#GE">disepolti</rdg></app></l>
+					<l>Fanvi, e <app><rdg wit="#BO">l'Inganno</rdg><rdg wit="#GE">lo Inganno</rdg></app> di tal soglio è fabbro:</l>
+					<l>Quindi, al Solopossente</l>
+					<l>La folgore strappata,</l>
+					<l>Eran d'Orto terrore e d'Occidente,</l>
+					<l>E si pascean di regni e di peccata.</l>
+					<l>Non più: — Dio disse: e lor possa disparve;</l>
+					<l>Pur ne l'Ausonia ancor egra e acciecata</l>
+				</lg>
+				<lg type="free" n="4">
+					<l>Passeggian truci le adorate larve.</l>
+					<l>Passeggian truci, e '1 diadema e il manto</l>
+					<l>De' boreali Vandali ai nepoti</l>
+					<l>Vestendo, al scettro sposano la croce;</l>
+					<l>Onde il Tevere e l'Amo a te devoti,</l>
+					<l>Libertà santa dea, cercan la foce</l>
+					<l>Sdegnosamente in suon quasi di pianto;</l>
+					<l>E la turrita Manto</l>
+					<l>Offre <app><rdg wit="#BO">asilo</rdg><rdg wit="#GE">scampo</rdg></app> ai tiranni, e il bei Sebeto</l>
+					<l><app><rdg wit="#BO">Lambe i piè</rdg><rdg wit="#GE">Irriga</rdg></app> mansueto</l>
+					<l><app><rdg wit="#BO">Alle soggette ad Etna</rdg><rdg wit="#GE">Le al Vesuvio soggette</rdg></app> auree campagne</l>
+					<l>E ricche aduna a usurpator le messi;</l>
+					<l>Abbevera il Ticino</l>
+					<l>Ungari armenti, e l'ospitali arene</l>
+					<l>Non saluta <app><rdg wit="#BO"/><rdg wit="#GE">il</rdg></app> Panaro in suo cammino;</l>
+					<l>T'ode gridar oltre le sue montagne</l>
+					<l>La subalpina donna e l'elmo allaccia</l>
+					<l>E s'alza e terge i rai nel duoi dimessi,</l>
+					<l>Ma le gravano il pie sarde catene,</l>
+					<l>Onde ricade e copresi la faccia;</l>
+					<l>E le a te care un giorno</l>
+					<l>Città nettunie, or fatte</l>
+					<l>Son di mille Dionisj empio soggiorno:</l>
+					<l>Liguria avara contro sé combatte;</l>
+					<l>E l'inerme leon prostrato avventa</l>
+					<l>Ne' suoi le zampe e la coda dibatte</l>
+					<l>E gli ammolliti abitator spaventa.</l>
+				</lg>
+				<lg type="free" n="5">
+					<l>Deh! mira, come flagellata a terra</l>
+					<l>Italia serva immobilmente giace</l>
+					<l>Per disperazi'on fatta secura:</l>
+					<l>Or perché turbi sua dolente pace,</l>
+					<l>E furor matto e improvida paura</l>
+					<l>Le movi intorno di rapace guerra?</l>
+					<l>Piaghe immense rinserra</l>
+					<l>Nel cor profondo; a che piagar suo petto,</l>
+					<l>Forse d'invidia oggetto,</l>
+					<l>Per chi suo gemer da lontan non sente?</l>
+					<l>Ma tu, feroce Dea, non badi e passi,</l>
+					<l>E <app><rdg wit="#BO">all'armi</rdg><rdg wit="#GE">a l'armi</rdg></app> chiami, <app><rdg wit="#BO">all'armi</rdg><rdg wit="#GE">a l'armi</rdg></app>,</l>
+					<l>E al tuon de' bronzi e al fulminar tremendo</l>
+					<l>E a <app><rdg wit="#BO">l'ullulo</rdg><rdg wit="#GE">l'ululo</rdg></app> guerrier perdonsi i carmi.</l>
+					<l>Cede Sabaudia, e in alto orribilmente</l>
+					<l>Del tuo giovin Campion splende la lancia;</l>
+					<l>Tutto trema e si prostra anzi i suoi passi,</l>
+					<l>E l'Aquila rèal fugge stridendo</l>
+					<l>Ferita <app><rdg wit="#BO">nelle</rdg><rdg wit="#GE">ne le</rdg></app> penne e <app><rdg wit="#BO">nella</rdg><rdg wit="#GE">ne la</rdg></app> pancia.</l>
+					<l>Gallia intuona e diffonde</l>
+					<l>Di Libertade il nome,</l>
+					<l>E mare e cielo Libertà risponde:</l>
+					<l>L'Angel di morte per le imbelli chiome</l>
+					<l>Squassa ed estende coronata testa:</l>
+					<l>
+					<emph>Libertà!</emph>
+					grida a le provincie dome,
+					</l>
+					<l>
+					<emph>Del Re dei folli Re vendetta è questa</emph>
+					.
+					</l>
+				</lg>
+				<lg type="free" n="6">
+					<l>
+					<emph>Del Re dei Re!</emph>
+					— Quindi tra il fumo e i lampi
+					</l>
+					<l>S'inveivo in sen di tempestosa nube,</l>
+					<l>Che occupa e offusca di Germania il suolo;</l>
+					<l>Donde precorsa da mavorzie tube</l>
+					<l>Balda rivolge e minacciosa il volo</l>
+					<l>L'Aquila, e ingombra di falangi i campi;</l>
+					<l>E par che <app><rdg wit="#BO">Esperia</rdg><rdg wit="#GE">Italia</rdg></app> avvampi</l>
+					<l>Di foco e guerra, di ruina e morte:</l>
+					<l>Ne spezzar sue ritorte</l>
+					<l>Osa, ne armarsi del francese usbergo.</l>
+					<l>Ma s'affaccia l'Eroe; sieguonlo i prodi</l>
+					<l>Repubblicano in fronte</l>
+					<l>Nome vantando con il sangue scritto;</l>
+					<l>Ecco d'estinti e di feriti un monte,</l>
+					<l>Ecco i schiavi <app><rdg wit="#BO">Alleman</rdg><rdg wit="#GE">aleman</rdg></app> ch'offrono il tergo</l>
+					<l>E la tricolorata alta bandiera</l>
+					<l>In man del Duce che in feral conflitto</l>
+					<l>Rampogna, incalza, invita, e in mille modi</l>
+					<l>Passa e vola qual Dio di schiera in schiera:</l>
+					<l>Pur dubbio è marte; ei dove</l>
+					<l>Più de' cavalli l'ugna</l>
+					<l>Nel sangue pesta, e sangue <app><rdg wit="#BO">innalza</rdg><rdg wit="#GE">schizza</rdg></app> e piove,</l>
+					<l>E regna morte in più ostinata pugna,</l>
+					<l>Co' suoi si scaglia, e la fortuna sfida</l>
+					<l>Guerriero invitto, e tra le fiamme pugna</l>
+					<l>E vince; e Italia libertade grida.</l>
+				</lg>
+				<lg type="free" n="7">
+					<l><app><rdg wit="#BO">Del vil Giove</rdg><rdg wit="#GE">E del Giove</rdg></app> terren l'augel battuto</l>
+					<l>Drizza a l'aere natlo tarpati i vanni</l>
+					<l>E sotto il manto imperiai si cela:</l>
+					<l>Ma il vincitor lo inceppa, e gli <app><rdg wit="#BO">allemanni</rdg><rdg wit="#GE">alemanni</rdg></app></l>
+					<l>Colli che borea eternamente gela,</l>
+					<l>Senton lo altero vertice premuto</l>
+					<l>Dal Guerrier cui tributo</l>
+					<l>Offre atterrita dal suo cenno<app resp="#FP"><rdg wit="#BO">,</rdg><rdg wit="#GE"/></app> e doma</l>
+					<l>La pontificia Roma,</l>
+					<l><app><rdg wit="#BO">Del</rdg><rdg wit="#GE">Dal</rdg></app> Guerrier che ad Esperia i lumi terge</l>
+					<l>E falla ricca de' tuoi puri doni,</l>
+					<l>O Libertà gran dea,</l>
+					<l>E l'uom ritoma <app><rdg wit="#BO">negli</rdg><rdg wit="#GE">ne gli</rdg></app> antichi dritti</l>
+					<l>Che prepotente tirannia <app><rdg wit="#BO">godea</rdg><rdg wit="#GE">premea</rdg></app>.</l>
+					<l>In vetta <app><rdg wit="#BO">all'Aventin</rdg><rdg wit="#GE">a l'Aventin</rdg></app> Cesare s'erge</l>
+					<l>Tirannie'ombra rabbuffata e fora,</l>
+					<l>E mira uscir di Libertà campioni</l>
+					<l>Popoli dal suo ardir vinti e sconfitti,</l>
+					<l>Ond'alza il brando, e cala la visiera....</l>
+					<l>Ombra esecranda! torna</l>
+					<l>Sitibonda di soglio</l>
+					<l>Ove lo stuoi <app><rdg wit="#BO">degli empj</rdg><rdg wit="#GE">dei despoti</rdg></app> soggiorna</l>
+					<l>Oltre Acheronte a pascerti d'orgoglio:</l>
+					<l>Eroe nel campo, di tiran corona</l>
+					<l>In premio avesti, or altro eroe ritoma,</l>
+					<l>Vien, vede, vince, e libertà ridona.</l>
+				</lg>
+				<lg type="free" n="8">
+					<l>Italia, Italia, con <app><rdg wit="#BO">fulgenti</rdg><rdg wit="#GE">eterei</rdg></app> rai</l>
+					<l><app resp="#FP"><rdg wit="#BO">Sull'Orizzonte</rdg><rdg wit="#GE">Su l'orizzonte</rdg></app> tuo <app><rdg wit="#BO">sorge</rdg><rdg wit="#GE">torna</rdg></app> l'aurora</l>
+					<l>Annunziatrice di perpetuo sole;</l>
+					<l>Vedi come s'imporpora e s'indora</l>
+					<l>Tuo ciel nebbioso, e par che si console</l>
+					<l>De' sacri rami dove <app><rdg wit="#BO">all'ombra</rdg><rdg wit="#GE">a l'ombra</rdg></app> stai !</l>
+					<l>I desolati lai</l>
+					<l>Non odi più di vedove dolenti,</l>
+					<l>Non orfani innocenti</l>
+					<l>
+					Che gridan
+					<emph>pane</emph>
+					ove non è chi '1 rompa:
+					</l>
+					<app>
+						<rdg wit="#BO">
+							<l>Ma col dito di Dio nei cori incise</l>
+							<l>Di natura le sante</l>
+							<l>Invïolate leggi, e dal terrore</l>
+							<l>Del dispotismo sin ad oggi infrante,</l>
+							<l>Le sante leggi spazïar con pompa</l>
+							<l>Liberamente ti vedrai nel seno.</l>
+							<l>Come non più nel civil sangue intrise</l>
+							<l>Promettitor scuoton le piante il fiore!</l>
+							<l>Come di messi il campo e il colle è pieno!</l>
+						</rdg>
+						<rdg wit="#GE"><l>Ve' ricomporsi i tuoi vulghi divisi</l>
+							<l>Nel gran Popol che fea</l>
+							<l>Prostrare i rè col senno e col valore,</l>
+							<l>Poi l'universo col suo fren reggea;</l>
+							<l>Vedi la consolar guerriera pompa</l>
+							<l>E gli annali e le leggi e i rostri e il nome!</l>
+							<l>Come non più del civil sangue intrisi</l>
+							<l>Vestonsi i campi di feconde messi</l>
+							<l>E di spiche alla pace ornan le chiome!</l>
+						</rdg>
+					</app>
+					<l>E come benedice</l>
+					<l>II cittadin villano,</l>
+					<l>Tergendo il fronte, Libertà felice!</l>
+					<l>Come dovizianti a l'oceano</l>
+					<l>Fendon gl'immensi flutti onusti pini,</l>
+					<l>Cui commercio stranier stende la mano</l>
+					<l>Sin <app><rdg wit="#BO">dagli</rdg><rdg wit="#GE">da gli</rdg></app> americani ultimi fini!</l>
+				</lg>
+				<lg type="free" n="9">
+					<l>Ma <app resp="#FP"><rdg wit="#BO">dell'Italia</rdg><rdg wit="#GE">de l'Italia</rdg></app> o voi genti future,</l>
+					<l>Me vate udite cui divino infiamma</l>
+					<l>Libero genio e ardor santo <app><rdg wit="#BO">di</rdg><rdg wit="#GE">del</rdg></app> vero:</l>
+					<l>Di Libertà <app><rdg wit="#BO">l'incorruttibil</rdg><rdg wit="#GE">la non mai spenta</rdg></app> fiamma</l>
+					<l>Rifulse in Grecia sin al dì che il nero</l>
+					<l>Vapor non surse di passioni impure;</l>
+					<l>E le mura <app><rdg wit="#BO">sicure</rdg><rdg wit="#GE">secure</rdg></app></l>
+					<l>Stettero, e l'armi del superbo Serse</l>
+					<l>Dai liberi disperse</l>
+					<l>Di <app><rdg wit="#BO">cittadin</rdg><rdg wit="#GE">civico</rdg></app> valor fur monumento:</l>
+					<l>Ambizïon <app><rdg wit="#BO">con le</rdg><rdg wit="#GE">da le</rdg></app> dorate piume</l>
+					<l>Sanguinosa le mani,</l>
+					<l>E di argento libidine feroce,</l>
+					<l>E molli studj, e piacer folli e vani</l>
+					<l>A libertà cangiar spoglia e costume.</l>
+					<l>Itale genti, se Virtù suo scudo</l>
+					<l>Su voi non stende, Libertà vi nuoce;</l>
+					<l>Se patrio amor non vi arma d'ardimento,</l>
+					<l>Non di compre falangi, il petto ignudo,</l>
+					<l>E se furenti modi</l>
+					<l>Dal pacifico tempio</l>
+					<l>Voi non cacciate, e sacerdozio frodi,</l>
+					<l>Sarete un dì <app><rdg wit="#BO">alle</rdg><rdg wit="#GE">a le</rdg></app> età misero esempio:</l>
+					<l>Vi guata e freme <app><rdg wit="#BO">già il tiran</rdg><rdg wit="#GE">il regnator</rdg></app> vicino</l>
+					<l><app><rdg wit="#BO">Dell'Istro</rdg><rdg wit="#GE">De l'Istro</rdg></app>, e anela a farne orrido scempio;</l>
+					<l>E un sol Liberator dievvi il destino.</l>
+					</lg>
+			</body>
+		</text>
+	</TEI>

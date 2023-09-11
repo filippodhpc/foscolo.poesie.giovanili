@@ -1,0 +1,658 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title>Le poesie giovanili di Ugo Foscolo</title>
+		<meta charset="utf-8">
+		<meta name="DC.Creator" content="Filippo Pelacci"/>
+    <meta name="DC.Title" content="Le poesie giovanili di Ugo Foscolo. Testi e contesti"/>
+    <meta name="DC.Subject" content="Le poesie di Ugo Foscolo e il contesto storico-artistico"/>
+    <meta name="DC.Description" content="Il sito web contiene le poesie giovanili di Foscolo, analizzate con VoyanTool e qui pubblicate a partire da un nuovo studio del testo. Accanto alle poesie si presenta una serie di ritratti utili per una migliore comprensione dei testi, nonché la descrizione dei manoscritti e dei relativi fondi archivistici.">
+    <meta name="DC.Publisher" content="UNIBO">
+    <meta name="DC.Date" content="2023.08.30">
+    <meta name="DC.Type" content="Sito web">
+    <meta name="DC.Format" content="HTML/CSS/JS">
+    <link rel="DC.Identifier" href="https://github.com/filippodhpc/foscolo-dh.git">
+    <link rel="DC.Source" href="https://www.w3schools.com/"/>
+    <link rel="DC.Source" href="https://getbootstrap.com/"/>
+    <link rel="DC.Source" href="https://www.europeana.eu/it"/>
+    <link rel="DC.Source" href="http://www.bibliotecaitaliana.it/">
+    <meta name="DC.Source" content="IT\ICCU\SBL\0524157"/>
+    <meta name="DC.Source" content="Foscolo, Ugo. Tragedie e poesie minori - Firenze: F. Le Monnier, 1961"/>
+    <meta name="DC.Source" content="ISBN\9788844600174884460017X"/>
+    <meta name="DC.Source" content="IT\ICCU\RML\0062367"/>
+    <meta name="DC.Relation" content="IT\ICCU\MIL\0027469"/>
+    <meta name="DC.Relation" content="ISBN\88-491-2023-0"/>
+    <link rel="DC.Relation" href="https://wikifoscolo.labcd.unipi.it/index.php/la-chioma-di-berenice/"/>
+    <link rel="DC.Coverage" href="http://vocab.getty.edu/page/tgn/7003127/">
+    <meta name="DC.Language" content="it"/> 
+    <meta name="DC.Rights" content="CC_BY-SA-3.0">
+		<!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="style/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style/prova.css"/>
+    <link rel="icon" type="image/x-icon" href="img/firma.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+	</head>
+	<body>
+    <div class="bg">
+      <header>
+        <h2>Le poesie giovanili di Ugo Foscolo</h2> 
+        <h4>Testi e contesti</h4> 
+      </header>
+    </div>
+			<nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto mb-2">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true" href="#">Progetto</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link attiva" role="button" data-bs-toggle="dropdown" aria-current="page">
+                  Collezione
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item attiva" href="list-items.html" aria-current="page">Lista</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item disabled" aria-disabled="true" href="#">Soggetti</a></li>
+                  <li><a class="dropdown-item disabled" aria-disabled="true" href="#">Date</a></li>
+                </ul>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true">Bibliografia</a>
+                </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Recenti
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="item-metadati-foscolo.html">Ritratto di Ugo Foscolo</a></li>
+                  <li><a class="dropdown-item" href="item-metadati-david.html">Napoleone nel suo studio</a></li>
+                  <li><a class="dropdown-item" href="item-bonaparte-liberatore.html">Bonaparte Liberatore</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+              Newsletter
+            </button>
+            <div class="modal fade" id="exampleModalToggle" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Newsletter</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Inserisci qui la tua email per completare l'iscrizione</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                    <button type="button" class="btn btn-success" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Invia</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Newsletter</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Iscrizione completata con successo!
+                  </div>
+                  <div class="modal-footer">
+                    <a href="item-metadati-david.html"><button class="btn btn-success">Torna alla navigazione</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--fine modale-->
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Cerca</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <main class="background-gray pb-5">
+      <section class="container-fluid">
+        <div class="row">
+          <div class="col-md-2 col-sm-2 col-xs-12 mt-4 mb-6">
+            <aside>
+              <div class="breadcrumbs ms-3">
+                <ul class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="list-items.html">Lista</a></li>
+                  <li class="breadcrumb-item"><a href="item-bonaparte-liberatore.html">Bonaparte liberatore</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Metadati</li>
+                </ul>
+              </div>
+              <div class="block">
+                <a href="bonaparte.xml" download="bonaparte-liberatoreTEI.xml" target="_blank"><button type="button" class="btn btn-outline-success btn-block mt-4"><i class="bi bi-code-square"></i> Scarica il file XML/TEI</button></a>
+                <a href="dc/bonaparteDC.xml" target="_blank" download="bonaparte-liberatoreDC.xml"><button type="button" class="btn btn-outline-success  btn-block mt-4"><i class="bi bi-code-square"></i> Scarica il file XML/DC</button></a>
+                <a href="#" class="active"><button type="button" class="btn btn-outline-success  btn-block mt-4 active"><i class="bi bi-info-square"></i> Vai ai metadati della risorsa</button></a>
+                <a href="#"><button type="button" class="btn btn-outline-success btn-block mt-4"><i class="bi bi-book"></i> Vai alla visualizzazione in EVT</button></a>
+              </div>
+            </aside>
+          </div>
+          <div class="col-md-8 col-sm-8 col-xs-12 mt-4 mb-6">
+            <div class="ex3">
+              <div class="card card-bonaparte text-center">
+                  <div class="card-header">
+                  Bonaparte liberatore - Foscolo, Ugo
+                  </div>
+                  <div class="card-body">
+                    <div class="bg">
+                      <h5 class="card-title">How to quote</h5>
+                      <!-- Button trigger modal -->
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <!--bs svg icons-->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+                          <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+                        </svg>
+                      </button>
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h3 class="modal-title fs-5" id="exampleModalLabel">Come citare l'edizione digitale del testo</h3>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <input type="text" value="Foscolo, Ugo. Bonaparte liberatore - Ugo Foscolo, Le poesie giovanili di Ugo Foscolo" id="myInput"><!--aggiungi link a github-->
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Chiudi</button>
+                              <button onclick="myFunction()" type="button" class="btn btn-success" data-bs-dismiss="modal">Copia negli appunti</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer text-body-secondary">
+                    Ultimo aggiornamento: 2023.09.04
+                  </div>
+              </div>
+              <div class="table">
+              <table class="table">
+                <tbody class="table-group-divider mt-4">
+                  <tr>
+                    <td class="no-line"><h5 class="no-line">Testo digitale</h5></td>
+                  </tr>
+                  <tr>
+                    <td>Responsabile della codifica:</td>
+                    <td><strong>Filippo Pelacci</strong><div></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Formato file:</td>
+                    <td><strong>XML/TEI</strong><div></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Tipo di codifica:</td>
+                    <td><strong>parallel segmentation</strong><div></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Soggetto:</td>
+                    <td><strong>Poesia Italiana</strong></td>
+                    <td><button type="button" class="btn btn-sm btn-outline-success metadati"><a href="http://id.loc.gov/authorities/subjects/sh85068841" target="_blank" title="vai all'identificativo LCSH">LCSH</a></button></td>
+                  </tr>
+                  <tr>
+                    <td>Soggetto:</td>
+                    <td><strong>Napoleone</strong></td>
+                    <td><button type="button" class="btn btn-sm btn-outline-success metadati"><a href="https://id.loc.gov/authorities/subjects/sh2005003686.html" target="_blank" title="vai all'identificativo LCSH">LCSH</a></button></td>
+                  </tr>
+                  <tr>
+                    <td>Soggetto:</td>
+                    <td><strong>Rivoluzione francese</strong></td>
+                    <td><button type="button" class="btn btn-sm btn-outline-success metadati"><a href="https://id.loc.gov/authorities/subjects/sh85051319.html" target="_blank" title="vai all'identificativo LCSH">LCSH</a></button></td>
+                  </tr>
+                  <tr>
+                    <td>Soggetto:</td>
+                    <td><strong>XVIII secolo</strong></td>
+                    <td><button type="button" class="btn btn-sm btn-outline-success metadati"><a href="https://id.loc.gov/authorities/subjects/sh85041401.html" target="_blank" title="vai all'identificativo LCSH">LCSH</a></button></td>
+                  </tr>
+                  <tr>
+                    <td>Soggetto:</td>
+                    <td><strong>XIX secolo</strong></td>
+                    <td><button type="button" class="btn btn-sm btn-outline-success metadati"><a href="https://id.loc.gov/authorities/subjects/sh85091984.html" target="_blank" title="vai all'identificativo LCSH">LCSH</a></button></td>
+                  </tr>
+                <tbody class="table-group-divider">
+                  <tr>
+                    <td class="no-line"><h5 class="no-line">Edizione bolognese</h5></td>
+                  </tr>
+                  <tr>
+                    <td>Livello bibliografico:</td>
+                    <td><strong>Monografia</strong><div></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Tipo di documento:</td>
+                    <td><strong>Testo - non mediato</strong></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Autore principale:</td>
+                    <td><strong>Foscolo, Ugo</strong></td>
+                    <td><button type="button" class="btn btn-sm btn-outline-success metadati"><a href="https://www.wikidata.org/wiki/Q166234" title="vai a Foscolo, Ugo in wikiData" target="_blank">ID</a></button></td>
+                  </tr>
+                  <tr>
+                    <td>Frontespizio:</td>
+                    <td><strong>  
+                    Italia \i. e. Bologna!, anno primo dell'italica libertà \1797!</strong><div></td>
+                    <td></td>
+                  </tr>
+                   <tr>
+                    <td>Descrizione fisica:</td>
+                    <td><strong>13 pp., 8°</strong><div></td>
+                    <td></td>
+                  </tr>
+                   <tr>
+                    <td>Edizione:</td>
+                    <td><strong>Seconda</strong><div></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Editore:</td>
+                    <td><strong>Marsigli, Jacopo</strong></div></td>
+                    <td><!-- Button trigger modal -->
+                      <button type="button" class="btn btn-sm btn-outline-success metadati" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                        Scopri
+                      </button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="exampleModalLabel">Scopri di più</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                             Bonaparte liberatore. Oda del liber'uomo Niccolò Ugo Foscolo. - Italia \i. e. Bologna!, anno primo dell'italica libertà \1797!. - [2], 13, [1] p. ; 8°. - Dedica dell'A. alla città di Reggio a c. a2r. - Per l'identificazione dell'ed. (la prima), cfr. U. Foscolo, Edizione nazionale delle opere di Ugo Foscolo, v. 2, Tragedie e poesie minori, a cura di Guido Bezzola. Firenze, 1961, p. LXXV-LXXVII e v. 6., Scritti letterari e politici dal 1796 al 1808, a cura di Giovanni Gambarin, Firenze, 1972, p. LI e 123, dove si dice che l'opera fu stampata "a pubbliche spese" dalla Giunta di difesa generale della Repubblica Cispadana. - Il nome dello stampatore, Iacopo Marsigli, si legge in una nota ms. sull'esemplare posseduto dalla Biblioteca dell'Archiginnasio, e viene confermato in Archivio di stato di Bologna, Giunta di difesa generale, b. II/5, 27 maggio 1797. - Segn.: [pi greco]2([pi greco]1+a6). - Prima c. bianca..
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Titolo:</td>
+                    <td><strong>Bonaparte liberatore. Oda del liber'uomo Niccolò Ugo Foscolo</strong></td>
+                    <td></button></td>
+                  </tr>
+                  <tr>
+                    <td>Impronta:</td>
+                    <td><strong>O.a. a.a, o.o; noo: (3) 1797 (F)</strong></div></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                  <tr>
+                    <td>Luogo di pubblicazione:</td>
+                    <td><strong>Bologna</strong></div></td>
+                    <td><button type="button" class="btn btn-sm btn-outline-success metadati"><a href="https://www.geonames.org/3181928/bologna.html" target="_blank" title="vai a GeoNames">GeoNames</a></button></td>
+                  </tr>
+                    <td>Lingua di pubblicazione:</td>
+                    <td><strong>Italiano</strong></div></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Paese di pubblicazione:</td>
+                    <td><strong>Italia</strong></div></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Identificativo:</td>
+                    <td><strong>IT\ICCU\IEIE\000972</strong></td>
+                    <td></td>
+                  </tr>
+                  <tr class="invisble">
+                    <td>Data:</td>
+                    <td><strong>1797</strong></td>
+                    <td><button type="button" class="btn btn-sm btn-outline-success metadati"><a href="#" title="vai ad altre opere con medesima datazione">Altri 1797</a></button></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <button type="button" class="btn btn-outline-success metadati" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                        ISBD
+                      </button>
+                      <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="exampleModalLabel">ISBD</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Bonaparte liberatore. Oda del liber'uomo Niccolò Ugo Foscolo. - Italia \i. e. Bologna!, anno primo dell'italica libertà \1797!. - [2], 13, [1] p. ; 8°. - Dedica dell'A. alla città di Reggio a c. a2r. - Per l'identificazione dell'ed. (la prima), cfr. U. Foscolo, Edizione nazionale delle opere di Ugo Foscolo, v. 2, Tragedie e poesie minori, a cura di Guido Bezzola. Firenze, 1961, p. LXXV-LXXVII e v. 6., Scritti letterari e politici dal 1796 al 1808, a cura di Giovanni Gambarin, Firenze, 1972, p. LI e 123, dove si dice che l'opera fu stampata "a pubbliche spese" dalla Giunta di difesa generale della Repubblica Cispadana. - Il nome dello stampatore, Iacopo Marsigli, si legge in una nota ms. sull'esemplare posseduto dalla Biblioteca dell'Archiginnasio, e viene confermato in Archivio di stato di Bologna, Giunta di difesa generale, b. II/5, 27 maggio 1797. - Segn.: [pi greco]2([pi greco]1+a6). - Prima c. bianca..
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+                <tbody class="table-group-divider">
+                  <tbody class="table-group-divider">
+                  <tr>
+                    <td class="no-line"><h5 class="no-line">Edizione genovese</h5></td>
+                  </tr>
+                  <tr>
+                    <td>Livello bibliografico:</td>
+                    <td><strong>Monografia</strong><div></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Tipo di documento:</td>
+                    <td><strong>Testo</strong></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Autore principale:</td>
+                    <td><strong>Foscolo, Ugo</strong></td>
+                    <td><button type="button" class="btn btn-sm btn-outline-success metadati"><a href="https://www.wikidata.org/wiki/Q166234" title="vai a Foscolo, Ugo in wikiData" target="_blank">ID</a></button></td>
+                  </tr>
+                  <tr>
+                    <td>Frontespizio:</td>
+                    <td><strong>  
+                    Italia: anno VIII</strong><div></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Descrizione fisica:</td>
+                    <td><strong>16 pp., 8°</strong><div></td>
+                    <td></td>
+                  </tr>
+                   <tr>
+                    <td>Edizione:</td>
+                    <td><strong>Sesta</strong><div></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Editore:</td>
+                    <td><strong>Stamperia Frugoni</strong></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Titolo:</td>
+                    <td><strong>Bonaparte liberatore. Oda del liber'uomo Niccolò Ugo Foscolo</strong></td>
+                    <td></button></td>
+                  </tr>
+                  <tr>
+                    <td>Impronta:</td>
+                    <td><strong>e.o- a.e, a.a, SiCu (C) 1799 (F)</strong></div></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Lingua di pubblicazione:</td>
+                    <td><strong>Italiano</strong></div></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Paese di pubblicazione:</td>
+                    <td><strong>Italia</strong></div></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Identificativo:</td>
+                    <td><strong>IT\ICCU\PAVE\004540</strong></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Data:</td>
+                    <td><strong>1799</strong></td>
+                    <td><button type="button" class="btn btn-sm btn-outline-success metadati"><a href="#" title="vai ad altre opere con medesima datazione">Altri 1899</a></button></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <button type="button" class="btn btn-outline-success metadati" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                        ISBD
+                      </button>
+                      <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="exampleModalLabel">ISBD</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                               Bonaparte liberatore. Oda di Ugo Foscolo. - Sesta edizione. - Italia : [Stamperia Frugoni], anno VIII [1799]. - [16] p. ; 8°. - Stampato a Genova..
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          </div>
+          <div class="col-md-2 col-sm-12 col-xs-12 mt-4">
+          <h3>Testi e contesti</h3>
+              <div class="vertical-menu">
+                <a href="index.html"><button type="button" class="btn btn-outline-success btn-block mt-4">Torna alla timeline</button></a>
+                <a href="https://www.treccani.it/enciclopedia/ugo-foscolo_%28Dizionario-Biografico%29/" title="Foscolo, Ugo in DBI" target="_blank"><button type="button" class="btn btn-outline-success btn-block mt-4">Vai al DBI</button></a>
+                <a href="https://www.treccani.it/enciclopedia/rivoluzione-francese_%28Enciclopedia-Italiana%29/" title="vai alla voce dell'Enciclopedia Treccani" target="_blank"><button type="button" class="btn btn-outline-success btn-block mt-4">La Rivoluzione Francese</button></a>
+                <a href="https://it.wikipedia.org/wiki/Caduta_della_Repubblica_di_Venezia" title="vai alla pagina wikipedia.it" target="_blank"><button type="button" class="btn btn-outline-success btn-block mt-4">Venezia e la Rivoluzione</button></a>
+                <a href="https://it.wikipedia.org/wiki/Trattato_di_Campoformio" title="vai alla pagina wikipedia.it" target="_blank"><button type="button" class="btn btn-outline-success btn-block mt-4">Il trattato di Campoformio</button></a>
+                <a href="https://www.treccani.it/enciclopedia/repubblica-di-venezia" title="vai alla voce dell'Enciclopedia Treccani" target="_blank"><button type="button" class="btn btn-outline-success btn-block mt-4">La Repubblica di Venezia</button></a>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid mt-4">
+        <div class="row">
+        <h5 class="mb-4">Potrebbe interessarti anche:</h5>
+          <div class="column">
+            <div class="card">
+              <div class="background1">
+                <div class="table">
+                  <tbody>
+                    <tr>
+                      <td></td>
+                      <td><h4><strong>A Venezia</strong></h4></td>
+                      <td><h5></h5></td>
+                    </tr><br/>
+                    <tr>
+                      <td>Autore: </td>
+                      <td><strong>Ugo Foscolo</strong></td>
+                      <td></td>
+                    </tr><br/>
+                    <tr>
+                      <td>Data:</td>
+                      <td><strong>1796-1797</strong></td>
+                      <td></td><br/>
+                    </tr>
+                    <tr>
+                      <td>Forma poetica:</td>
+                      <td><strong>Sonetto</strong></td>
+                      <td></td><br/>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>
+                        <p class="d-inline-glex gap-1">
+                        <a class="btn btn-outline-success card-accedi card-more" href="#">Accedi alla risorsa</a></p>
+                      </td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="background2">
+                <div class="table">
+                  <tbody>
+                    <tr>
+                      <td></td>
+                      <td><h4><strong>Napoleone nel suo studio</strong></h4></td>
+                      <td><h5></h5></td>
+                    </tr><br/>
+                    <tr>
+                      <td>Autore: </td>
+                      <td><strong>Jacques-Louis David</strong></td>
+                      <td></td>
+                    </tr><br/>
+                    <tr>
+                      <td>Data:</td>
+                      <td><strong>1812</strong></td>
+                      <td></td><br/>
+                    </tr>
+                    <tr>
+                      <td>Tecnica:</td>
+                      <td><strong>Olio e telaio su tela</strong></td>
+                      <td></td><br/>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>
+                        <p class="d-inline-glex gap-1">
+                        <a class="btn btn-outline-success card-accedi card-more" href="item-metadati-david.html">Accedi alla risorsa</a></p>
+                      </td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </div>
+              </div>
+            </div>
+          </div>          
+          <div class="column">
+            <div class="card">
+              <div class="background3">
+                <div class="table">
+                  <tbody>
+                    <tr>
+                      <td></td>
+                      <td><h4><strong>Ritratto di Ugo Foscolo</strong></h4></td>
+                      <td><h4></h4></td>
+                    </tr><br/>
+                    <tr>
+                      <td>Autore: </td>
+                      <td><strong>Andrea Appiani</strong></td>
+                      <td></td>
+                    </tr><br/>
+                    <tr>
+                      <td>Data:</td>
+                      <td><strong>1801-1802</strong></td>
+                      <td></td><br/>
+                    </tr>
+                    <tr>
+                      <td>Tecnica:</td>
+                      <td><strong>Pittura</strong></td>
+                      <td></td><br/>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>
+                        <p class="d-inline-glex gap-1">
+                        <a class="btn btn-outline-success card-accedi card-more" href="#">Accedi alla risorsa</a></p>
+                      </td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="background1">
+                <div class="table">
+                  <tbody>
+                    <tr>
+                      <td></td>
+                      <td><h4><strong>La verità</strong></h4></td>
+                      <td><h4></h4></td>
+                    </tr><br/>
+                    <tr>
+                      <td>Autore: </td>
+                      <td><strong>Ugo Foscoloo</strong></td>
+                      <td></td>
+                    </tr><br/>
+                    <tr>
+                      <td>Data:</td>
+                      <td><strong>1795</strong></td>
+                      <td></td><br/>
+                    </tr>
+                    <tr>
+                      <td>Forma poetica:</td>
+                      <td><strong>Ode</strong></td>
+                      <td></td><br/>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>
+                        <p class="d-inline-glex gap-1">
+                        <a class="btn btn-outline-success card-accedi card-more" href="#">Accedi alla risorsa</a></p>
+                      </td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="credit">
+      <span id="link"><a href="#" title="vai ai credits" class="credits">Credits</a> | <a href="#" title="vai alle licenze" class="credits">Licenze</a></span>
+    </div>
+    <footer>&copy; Filippo Pelacci 2023 - Corso di Digital Humanities e Patrimonio Culturale</footer>
+    <!--script bs-->
+    <script src="style/bootstrap.bundle.min.js"></script>
+    </script>
+    <script>
+function myFunction() {
+  // Get the text field
+  var copyText = document.getElementById("myInput");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+  // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+  
+  // Alert the copied text
+  alert("Copied the text: " + copyText.value);
+}
+</script>
+  </body>
+</html>

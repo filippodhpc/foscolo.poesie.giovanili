@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mp:metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:mp="http://ilmioprogetto.it">
+  <dc:title> Ritratto di Ugo Foscolo</dc:title>
+  <dc:subject xsi:type="dcterms:LCSH">https://id.loc.gov/authorities/subjects/sh85041401.html</dc:subject>
+  <dc:subject xsi:type="dcterms:LCSH">https://id.loc.gov/authorities/subjects/sh85091984.html</dc:subject>
+  <dc:subject xsi:type="dcterms:LCSH">https://id.loc.gov/authorities/subjects/sh85096661.html</dc:subject>
+  <dc:subject xsi:type="dcterms:LCSH">https://id.loc.gov/authorities/subjects/sh85105118.html</dc:subject>
+  <dc:subject xsi:type="dcterms:LCSH">https://id.loc.gov/authorities/subjects/sh85048172.html</dc:subject>
+  <dc:contributor xsi:type="mp:viaf">https://viaf.org/viaf/9930974/</dc:contributor>
+  <dcterms:publisher>Filippo Pelacci</dcterms:publisher>
+  <dc:date xsi:type="dc:created">1801-1802</dc:date>
+  <dcterms:modified xsi:type="dcterms:W3cdtf">2023-07-09</dcterms:modified>
+  <dc:type>Photo</dc:type>
+  <dc:publisher>GitHub</dc:publisher>
+  <dc:identifier xsi:type="mp">mp:0003</dc:identifier>
+  <dc:identifier xsi:type="mp:ICCD">0300180463</dc:identifier>
+  <dc:description>Il giovane raffigurato nel dipinto viene ormai identificato in Ugo Foscolo, confermato dalla presenza del nome "Teresa", riferimento a Teresa Pickler Monti, moglie di Vincenzo Monti e prima fiamma milanese del poeta, il cui nome di battesimo fu in seguito evocato in termini più generali dal Foscolo per definire il proprio ideale femmineo. L'addolcimento di alcuni aspetti del viso, come il naso aquilino, ben visibile nelle altre immagini del poeta, rientra nella prassi idealizzante che caratterizza gran parte dei ritratti dell'Appiani</dc:description>
+  <dc:coverage xsi:type="dcterms:TGN">https://www.geonames.org/12122872/biblioteca-%22ezio-raimondi%22.html.</dc:coverage>
+  <dc:rights>CC-BY-SA 4.0</dc:rights>
+  <dc:rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>
+</mp:metadata>

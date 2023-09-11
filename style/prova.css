@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 12px;
+  padding: 6px 10px 6px 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 6px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li {
+  background-color: none;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: white;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+  display: block;
+  border-radius: 4px;
+}
+
+#myUL li:hover {
+  background-color: #339966;
+}
+
+.btn-outline-success, .btn-success {
+  border-radius: 4px;
+}
+
+.metadati {
+  width: 100;
+  height: 30px;
+  color:black;
+}
+
+tr.no-line {
+  border: hidden;
+  width: 100%;
+}

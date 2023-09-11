@@ -1,0 +1,765 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title>Le poesie giovanili di Ugo Foscolo</title>
+		<meta charset="utf-8">
+		<meta name="DC.Creator" content="Filippo Pelacci"/>
+    <meta name="DC.Title" content="Le poesie giovanili di Ugo Foscolo"/>
+    <meta name="DC.Subject" content="Le poesie di Ugo Foscolo e il contesto storico-artistico"/>
+    <meta name="DC.Description" content="Il sito web contiene le poesie giovanili di Foscolo, analizzate con VoyanTool e qui pubblicate a partire da un nuovo studio del testo. Accanto alle poesie si presenta una serie di ritratti utili per una migliore comprensione dei testi, nonché la descrizione dei manoscritti e dei relativi fondi archivistici.">
+    <meta name="DC.Publisher" content="UNIBO">
+    <meta name="DC.Date" content="2023.08.30">
+    <meta name="DC.Type" content="Sito web">
+    <meta name="DC.Format" content="HTML/CSS/JS">
+    <link rel="DC.Identifier" href="https://github.com/filippodhpc/foscolo-dh.git">
+    <link rel="DC.Source" href="https://www.w3schools.com/"/>
+    <link rel="DC.Source" href="https://getbootstrap.com/"/>
+    <link rel="DC.Source" href="https://www.europeana.eu/it"/>
+    <link rel="DC.Source" href="http://www.bibliotecaitaliana.it/">
+    <meta name="DC.Source" content="IT\ICCU\RML\0062367"/>
+    <meta name="DC.Relation" content="IT\ICCU\MIL\0027469"/>
+    <meta name="DC.Relation" content="ISBN\88-491-2023-0"/>
+    <link rel="DC.Relation" href="https://wikifoscolo.labcd.unipi.it/index.php/la-chioma-di-berenice/"/>
+    <link rel="DC.Coverage" href="http://vocab.getty.edu/page/tgn/7003127/">
+    <meta name="DC.Language" content="it"/> 
+    <meta name="DC.Rights" content="CC_BY-SA-3.0">
+		<!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="style/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style/prova.css"/>
+    <link rel="icon" type="image/x-icon" href="img/firma.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+	</head>
+	<body>
+    <div class="bg">
+      <span id="torna-su"><header>
+        <h2>Le poesie giovanili di Ugo Foscolo</h2> 
+        <h4>Testi e contesti</h4> 
+      </header></span>
+    </div>
+			<nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true" href="#">Progetto</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link attiva" role="button" data-bs-toggle="dropdown" aria-current="page" aria-expanded="false">
+                  Collezione
+                </a>
+                <ul class="dropdown-menu" id="lista">
+                  <li><a class="dropdown-item attiva" href="list-items.html">Lista</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item disabled" aria-disabled="true" href="#">Soggetti</a></li>
+                  <li><a class="dropdown-item disabled" aria-disabled="true" href="#">Date</a></li>
+                </ul>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true">Bibliografia</a>
+                </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="lista" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Recenti
+                </a>
+                <ul class="dropdown-menu" id="lista">
+                  <li><a class="dropdown-item" href="item-metadati-foscolo.html">Ritratto di Ugo Foscolo</a></li>
+                  <li><a class="dropdown-item" href="item-metadati-david.html">Napoleone nel suo studio</a></li>
+                  <li><a class="dropdown-item attiva" href="item-bonaparte-liberatore.html">Bonaparte Liberatore</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+              Newsletter
+            </button>
+            <div class="modal fade" id="exampleModalToggle" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Newsletter</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Inserisci qui la tua email per completare l'iscrizione</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                    <button type="button" class="btn btn-success" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Invia</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Newsletter</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Iscrizione completata con successo!
+                  </div>
+                  <div class="modal-footer">
+                    <a href="item-bonaparte-liberatore.html"><button class="btn btn-success">Torna alla navigazione</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--fine modale-->
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Cerca</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <main class="pb-5">
+      <section class="container-fluid">
+        <div class="row">
+          <div class="col-md-2 col-sm-12 col-xs-12 mt-4">
+            <aside>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="list-items-poesie.html">Lista</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Bonaparte Liberatore</li>
+                </ol>
+              </nav>
+              <div class="block mt-10">
+                <a href="bonaparte.xml" target="_blank" download="bonaparte-liberatoreTEI.xml"><button type="button" class="btn btn-outline-success btn-block mt-4"><i class="bi bi-code-square"></i> Scarica il file XML/TEI</button></a>
+                <a href="dc/bonaparteDC.xml" target="_blank" download="bonaparte-liberatoreDC.xml"><button type="button" class="btn btn-outline-success  btn-block mt-4"><i class="bi bi-code-square"></i> Scarica il file XML/DC</button></a>
+                <a href="item-metadati-bonaparte-liberatore.html"><button type="button" class="btn btn-outline-success  btn-block mt-4"><i class="bi bi-info-square"></i> Vai ai metadati della risorsa</button></a>
+                <a href="#"><button type="button" class="btn btn-outline-success btn-block mt-4"><i class="bi bi-book"></i> Vai alla visualizzazione in EVT</button></a>
+              </div>
+            </aside>
+          </div>
+          <div class="col-md-8 col-sm-12 col-xs-12 mt-4 main">
+            <div class="ex3">
+              <iframe style='width: 100%; height: 525px;' src='https://voyant-tools.org/tool/Cirrus/?lang=it&corpus=d8eb66a58cfdde86682cfc17a78e6afa'></iframe>
+              <h7 class="text mt-2">A BONAPARTE</h7>
+              <div class="text-dedica">
+                <p>Io ti dedicava questa Oda quando tu, vinte dodici giornate e venticinque combattimenti, espugnate dieci fortezze, conquistate otto provincie, riportate centocinquanta insegne, quattrocento cannoni e centomila prigionieri, annientati cinque eserciti, disarmato il re sardo, atterrito <a href="https://www.treccani.it/enciclopedia/ferdinando-i-di-borbone-re-delle-due-sicilie_(Dizionario-Biografico)" target="_blank" title="vai alla voce del DBI" class="dbi">Ferdinando IV</a>, umiliato <a href="https://www.treccani.it/enciclopedia/papa-pio-vi_%28Dizionario-Biografico%29/" target="_blank" title="vai alla voce del DBI" class="dbi">Pio VI</a>, rovesciate due antiche repubbliche, e forzato l'imperatore alla tregua, davi pace a' nemici, costituzione alla Italia, e onnipotenza al popolo francese.</p>
+                <p>Ed ora pur te la dedico non per lusingarti col suono delle tue gesta, ma per mostrarti col paragone la miseria di questa Italia che giustamente aspetta restaurata la libertà da chi primo la fondò.</p>
+                <p>Possa io intuonare di nuovo il canto della vittoria quando tu tornerai a passare le Alpi, a vedere, ed a vincere!</p>
+                <p>
+                Vero è che, più che della tua lontananza, la nostra rovina è colpa degli uomini guasti dall'antico servaggio e dalla nuova <a title="vedi la voce nel glossario" href="#licenza" class="glossario">licenza</a>. Ma poiché la nostra salute sta nelle mani di un conquistatore, ed è vero pur troppo che il fondatore di una repubblica deve essere un despota, noi e per i tuoi beneficj, e pel tuo Gènio che sovrasta tutti gli altri della età nostra siamo in dovere di invocarti, e tu in dovere di soccorrerci non solo perché partecipi del sangue italiano, e la rivoluzione d'Italia è opera tua, ma per fare che i secoli tacciano di quel
+                <title>Trattato</title>
+                che trafficò la mia patria, insospettì le nazioni, e scemò dignità al tuo nome.
+                </p>
+                <p>E' pare che la tua fortuna, la tua fama, e la tua virtù te ne m abbiano in tempo aperto il campo. Tu stai sopra un seggio donde e col braccio e col senno puoi restituire libertà a noi, prosperità e fede alla tua Repubblica, e pace all'Europa.</p>
+                <p>Pure ne per te glorioso, ne per me onesto sarebbe s'io adesso non t'offerissi che versi di laude. Tu se' ornai più grande per i tuoi fatti, che per gli altrui detti: ne a te quindi s'aggiugnerebbe elogio, ne a me altro verrebbe tranne la taccia di adulatore. Onde t'invierò un consiglio, che essendo da te liberalmente accolto, mostrerai che non sono sempre insociabili virtù e potenza, e ch'io, quantunque oscurissimo, sono degno di laudarti perché so dirti fermamente la verità.</p>
+                <p>Uomo tu sei e mortale e nato in tempi ove la universale scelleratezza sommi ostacoli frappone alle magnanime imprese, e potentissimi incitamenti al mal fare. Quindi o il sentimento della tua superiorità, o la conoscenza del comune avvilimento potrebbero trarti forse a cosa che tu stesso abborri. Ne Cesare prima di passare il Rubicone ambiva alla dittatura del mondo.</p>
+                <p>Anche negli infelicissimi tempi le grandi rivoluzioni destano feroci petti ed altissimi ingegni. Che se tu aspirando al sommo potere sdegni generosamente i primi, aspirando alla immortalità, il che è più degno delle sublimi anime, rispetterai i secondi. Avrà il nostro secolo un Tacito, il quale commetterà la tua sentenza alla severa posterità.</p>
+                <p class="right">Salute</p>
+                <p class="right">Genova 5 agghiacciatore anno VIII.</p>
+                <p class="right">UGO FOSCOLO</p>
+              </div>
+              <div class="text">
+                <p class="strofa">
+                  Dove tu, diva, da l'antica e forte<br/>
+                  Dominatrice libera del mondo<br/>
+                  Felice a l'ombra di tue sacre penne,<br/>
+                  Dove fuggivi, quando ferreo <a href="#pondo" title="vedi la voce nel glossario" class="glossario">pondo</a><br/>
+                  Di dittatoria tirannia le tenne<br/>
+                  Umil la testa fra servaggio e morte?<br/>
+                  Te seguir le risorte<br/>
+                  Ombre de' Bruti, ai secoli mostrando<br/>
+                  Alteramente il <a href="#brando" title="vedi la voce nel glossario" class="glossario">brando</a><br/>
+                  Del padre tinto e dei figliuoi nel sangue;<br/>
+                  Te, o Libertà, se per le gelid'onde<br/>
+                  Del Danubio e del Reno<br/>
+                  Gisti fra genti indomite guerriere;<br/>
+                  Te se raccolse nel sanguineo seno<br/>
+                  Brittannia, e t'ascondea mortifer <a href="#angue" itle="vedi la voce nel glossario" class="glossario">angue</a>;<br/>
+                  Te se al furor di mercenarie spade<br/>
+                  De l'oceano da le ignote sponde<br/>
+                  T'invitar meste, e del tuo nome altere<br/>
+                  Le americane libere contrade;<br/>
+                  O le <a href="#batavo" itle="vedi la voce nel glossario" class="glossario">batave</a> fonti,<br/>
+                  O ti furo ricetto<br/>
+                  Coronati di gel gli elvezj monti;<br/>
+                  Or che del vero illuminar l'aspetto<br/>
+                  Non è delitto, or io te, diva, invoco:<br/>
+                  Scendi, e la lingua e il petto<br/>
+                  Mi snoda e infiamma di tuo santo foco.<br/>
+                </p>
+                <p class="strofa">
+                  Ma tu de l'alpi da l'aerie cime<br/>
+                  Al rintronar di trombe e di <a  href="#timballo" itle="vedi la voce nel glossario" class="glossario">timballi</a><br/>
+                  Ausonia guati e giù piombi col volo;<br/>
+                  Anelanti ti sieguono i cavalli<br/>                  
+                  Che Palla sferza, e sul latino suolo<br/>
+                  Marte furente orme di foco imprime:<br/>
+                  Odo canto sublime<br/>
+                  Di mille e mille che vittoria, o morte<br/>
+                  Da l'italiche porte<br/>
+                  Giuran brandendo la terribil asta;<br/>
+                  E guerrier veggo di fiorente alloro<br/>                  
+                  Cinto le bionde chiome<br/>
+                  Su cui purpuree tremolando vanno<br/>
+                  Candide azzurre piume; egli al tuo nome<br/>
+                  Suo <a href="#brando" title="vedi la voce nel glossario" class="glossario">brando</a> snuda e abbatte, arde, devasta;<br/>
+                  Senno de' suoi corsier governa il morso,<br/>
+                  Ardir li 'ncalza, e de' marziali il coro<br/>
+                  Genj lo irraggia, e dietro lui si stanno<br/>
+                  In aer librate con perpetuo corso<br/>
+                  Sorte, Vittoria, e Fama.<br/>
+                  Or che fia dunque, o diva?<br/>
+                  Onde tal'ira? e qual fato te chiama<br/>
+                  A trar tant'armi da straniera riva<br/>
+                  Su questa un dì reina, or nuda e schiava<br/>
+                  Italia, ahi! solo al vituperio viva,<br/>
+                  Al vituperio che piangendo lava!<br/>
+                </p>
+                <p class="strofa">
+                  E depor le corone in Campidoglio,<br/>
+                  E i rè in trionfo <a href="#tributario" title="vedi la voce nel glossario" class="glossario">tributarj</a> e schiavi<br/>
+                  Roma già vide, e rovesciati i troni:<br/>
+                  Re–sacerdoti or con mentite chiavi<br/>
+                  Di oro ingordi e di sangue, altri Neroni,<br/>
+                  Grandeggiar mira in usurpato soglio:<br/>
+                  Siede a destra l'Orgoglio<br/>
+                  Cinto di stola, e ferri e <a href="#nappo" title="vedi la voce nel glossario" class="glossario">nappi</a> accoglie<br/>
+                  Sotto le ricche spoglie,<br/>
+                  Vendendo il cielo, ai popoli rapite;<br/>
+                  Sgabello al seggio fanno e fondamento<br/>
+                  Cataste di frementi<br/>
+                  Capi co gli occhi ne le trecce involti,<br/>
+                  E tepidi cadaveri innocenti,<br/>
+                  Cui sospiran nel fianco alte ferite<br/>
+                  Pel fulminar di pontificio labbro;<br/>
+                  E misti in pianto e in sangue, <a href="#atro" title="vedi la voce nel glossario" class="glossario">atro</a> cemento,<br/>
+                  Calcati busti e cranj disepolti<br/>
+                  Fanvi, e lo Inganno di tal soglio è fabbro:<br/>
+                  Quindi, al Solopossente<br/>
+                  La folgore strappata,<br/>
+                  Eran d'Orto terrore e d'Occidente,<br/>
+                  E si pascean di regni e di peccata.<br/>
+                  Non più: — Dio disse: e lor <a href="#possa" title="vedi la voce nel glossario" class="glossario">possa</a> disparve;<br/>
+                  Pur ne l'Ausonia ancor <a href="#egro" title="vedi la voce nel glossario" class="glossario">egra</a> e acciecata<br/>
+                </p>
+                <p class="strofa">
+                  Passeggian truci le adorate larve.<br/>
+                  Passeggian truci, e '1 diadema e il manto<br/>
+                  De' boreali Vandali ai nepoti<br/>
+                  Vestendo, al scettro sposano la croce;<br/>
+                  Onde il Tevere e l'Amo a te devoti,<br/>
+                  Libertà santa dea, cercan la foce<br/>
+                  Sdegnosamente in suon quasi di pianto;<br/>
+                  E la turrita Manto<br/>
+                  Offre scampo ai tiranni, e il bei Sebeto<br/>
+                  Irriga mansueto<br/>
+                  Le al Vesuvio soggette auree campagne<br/>
+                  E ricche aduna a usurpator le messi;<br/>
+                  Abbevera il Ticino<br/>
+                  Ungari armenti, e l'ospitali arene<br/>
+                  Non saluta il Panare in suo cammino;<br/>
+                  T'ode gridar oltre le sue montagne<br/>
+                  La subalpina donna e l'elmo allaccia<br/>
+                  E s'alza e terge i rai nel duoi dimessi,<br/>
+                  Ma le gravano il pie sarde catene,<br/>
+                  Onde ricade e copresi la faccia;<br/>
+                  E le a te care un giorno<br/>
+                  Città nettunie, or fatte<br/>
+                  Son di mille Dionisj empio soggiorno:<br/>
+                  Liguria avara contro sé combatte;<br/>
+                  E l'inerme leon prostrato avventa<br/>
+                  Ne' suoi le zampe e la coda dibatte<br/>
+                  E gli ammolliti abitator spaventa.<br/>
+                </p>
+                <p class="strofa">
+                  Deh! mira, come flagellata a terra<br/>
+                  Italia serva immobilmente giace<br/>
+                  Per disperazi'on fatta secura:<br/>
+                  Or perché turbi sua dolente pace,<br/>
+                  E furor matto e <a href="#improvvido" title="vedi la voce nel glossario" class="glossario">improvida</a> paura<br/>
+                  Le movi intorno di rapace guerra?<br/>
+                  Piaghe immense rinserra<br/>
+                  Nel cor profondo; a che piagar suo petto,<br/>
+                  Forse d'invidia oggetto,<br/>
+                  Per chi suo gemer da lontan non sente?<br/>
+                  Ma tu, feroce Dea, non badi e passi,<br/>
+                  E a l'armi chiami, a l'armi,<br/>
+                  E al tuon de' bronzi e al fulminar tremendo<br/>
+                  E a l'ululo guerrier perdonsi i carmi.<br/>
+                  Cede Sabaudia, e in alto orribilmente<br/>
+                  Del tuo giovin Campion splende la lancia;<br/>
+                  Tutto trema e si prostra anzi i suoi passi,<br/>
+                  E l'Aquila rèal fugge stridendo<br/>
+                  Ferita ne le penne e ne la pancia.<br/>
+                  Gallia intuona e diffonde<br/>
+                  Di Libertade il nome,<br/>
+                  E mare e cielo Libertà risponde:<br/>
+                  L'Angel di morte per le <a href="#imbelle" title="vedi la voce nel glossario" class="glossario">imbelli</a> chiome<br/>
+                  Squassa ed estende coronata testa:<br/>
+                  <em>Libertà!</em> grida a le provincie dome,<br/>
+                  <em>Del Re dei folli Re vendetta è questa</em>.<br/>
+                </p>
+                <p class="strofa">
+                  <emph>Del Re dei Re!</emph> — Quindi tra il fumo e i lampi<br/>
+                  S'inveivo in sen di tempestosa nube,<br/>
+                  Che occupa e offusca di Germania il suolo;<br/>
+                  Donde precorsa da <a href="#mavorzio" title="vedi la voce nel glossario" class="glossario">mavorzie</a> tube<br/>
+                  Balda rivolge e minacciosa il volo<br/>
+                  L'Aquila, e ingombra di falangi i campi;<br/>
+                  E par che Italia avvampi<br/>
+                  Di foco e guerra, di ruina e morte:<br/>
+                  Ne spezzar sue ritorte<br/>
+                  Osa, ne armarsi del francese <a href="#usbergo" title="vedi la voce nel glossario" class="glossario">usbergo</a>.<br/>
+                  Ma s'affaccia l'Eroe; sieguonlo i prodi<br/>
+                  Repubblicano in fronte<br/>
+                  Nome vantando con il sangue scritto;<br/>
+                  Ecco d'estinti e di feriti un monte,<br/>
+                  Ecco i schiavi aleman ch'offrono il tergo<br/>
+                  E la tricolorata alta bandiera<br/>
+                  In man del Duce che in <a href="#ferale" title="vedi la voce nel glossario" class="glossario">feral</a> conflitto<br/>
+                  Rampogna, incalza, invita, e in mille modi<br/>
+                  Passa e vola qual Dio di schiera in schiera:<br/>
+                  Pur dubbio è marte; ei dove<br/>
+                  Più de' cavalli l'ugna<br/>
+                  Nel sangue pesta, e sangue schizza e piove,<br/>
+                  E regna morte in più ostinata pugna,<br/>
+                  Co' suoi si scaglia, e la fortuna sfida<br/>
+                  Guerriero invitto, e tra le fiamme pugna<br/>
+                  E vince; e Italia libertade grida.<br/>
+                </p>
+                <p class="strofa">
+                  E del Giove terren l'augel battuto<br/>
+                  Drizza a l'aere natlo tarpati i <a href="#vanni" title="vedi la voce nel glossario" class="glossario">vanni</a><br/>
+                  E sotto il manto imperiai si cela:<br/>
+                  Ma il vincitor lo inceppa, e gli alemanni<br/>                  
+                  Colli che borea eternamente gela,<br/>
+                  Senton lo <a href="#altero" title="vedi la voce nel glossario" class="glossario">altero</a> vertice premuto<br/>
+                  Dal Guerrier cui tributo<br/>
+                  Offre atterrita dal suo cenno e doma<br/>
+                  La pontificia Roma,<br/>
+                  Dal Guerrier che ad Esperia i lumi terge<br/>
+                  E falla ricca de' tuoi puri doni,<br/>
+                  O Libertà gran dea,<br/>
+                  E l'uom ritoma ne gli antichi dritti<br/>
+                  Che prepotente tirannia premea.<br/>
+                  In vetta a l'Aventin Cesare s'erge<br/>
+                  Tirannie'ombra rabbuffata e fora,<br/>
+                  E mira uscir di Libertà campioni<br/>
+                  Popoli dal suo ardir vinti e sconfitti,<br/>
+                  Ond'alza il <a href="#brando" title="vedi la voce nel glossario" class="glossario">brando</a>, e cala la visiera....<br/>
+                  Ombra <a href="#esecrando" title="vedi la voce nel glossario" class="glossario">esecranda</a>! torna<br/>
+                  <a href="#sitibondo" title="vedi la voce nel glossario" class="glossario">Sitibonda</a> di soglio<br/>
+                  Ove lo stuoi dei despoti soggiorna<br/>
+                  Oltre Acheronte a pascerti d'orgoglio:<br/>
+                  Eroe nel campo, di tiran corona<br/>
+                  In premio avesti, or altro eroe ritoma,<br/>
+                  Vien, vede, vince, e libertà ridona.<br/>
+                </p>
+                <p class="strofa">
+                  Italia, Italia, con eterei rai<br/>
+                  Su l'orizzonte tuo toma l'aurora<br/>
+                  Annunziatrice di perpetuo sole;<br/>
+                  Vedi come s'imporpora e s'indora<br/>
+                  Tuo ciel nebbioso, e par che si console<br/>
+                  De' sacri rami dove a l'ombra stai!<br/>
+                  I desolati lai<br/>
+                  Non odi più di vedove dolenti,<br/>
+                  Non orfani innocenti<br/>
+                  Che gridan <em>pane</em> ove non è chi '1 rompa:<br/>
+                  Ve' ricomporsi i tuoi vulghi divisi<br/>
+                  Nel gran Popol che fea<br/>
+                  Prostrare i rè col senno e col valore,<br/>
+                  Poi l'universo col suo fren reggea;<br/>
+                  Vedi la consolar guerriera pompa<br/>
+                  E gli annali e le leggi e i rostri e il nome!<br/>
+                  Come non più del civil sangue intrisi<br/>
+                  Vestonsi i campi di feconde messi<br/>
+                  E di spiche alla pace oman le chiome!<br/>
+                  E come benedice<br/>
+                  II cittadin villano,<br/>
+                  Tergendo il fronte, Libertà felice!<br/>
+                  Come <a href="#doviziante" title="vedi la voce nel glossario" class="glossario">dovizianti</a> a l'oceano<br/>
+                  Fendon gl'immensi flutti <a href="#onusto" title="vedi la voce nel glossario" class="glossario">onusti</a> pini,<br/>
+                  Cui commercio stranier stende la mano<br/>
+                  Sin da gli americani ultimi fini!<br/>
+                </p>
+                <p class="strofa">
+                  Ma de l'Italia o voi genti future,<br/>
+                  Me vate udite cui divino infiamma<br/>
+                  Libero genio e ardor santo del vero:<br/>
+                  Di Libertà la non mai spenta fiamma<br/>
+                  Rifulse in Grecia sin al dì che il nero<br/>
+                  Vapor non surse di passioni impure;<br/>
+                  E le mura secure<br/>
+                  Stettero, e l'armi del superbo Serse<br/>
+                  Dai liberi disperse<br/>
+                  Di civico valor fur monumento:<br/>
+                  Ambizion da le dorate piume<br/>
+                  Sanguinosa le mani,<br/>
+                  E di argento libidine feroce,<br/>
+                  E molli studj, e piacer folli e vani<br/>
+                  A libertà cangiar spoglia e costume.<br/>
+                  Itale genti, se Virtù suo scudo<br/>
+                  Su voi non stende, Libertà vi nuoce;<br/>
+                  Se patrio amor non vi arma d'ardimento,<br/>
+                  Non di compre falangi, il petto ignudo,<br/>
+                  E se furenti modi<br/>
+                  Dal pacifico tempio<br/>
+                  Voi non cacciate, e sacerdozio frodi,<br/>
+                  Sarete un dì a le età misero esempio:<br/>
+                  Vi guata e freme il regnato? vicino<br/>
+                  De l'Istro, e anela a farne orrido scempio;<br/>
+                  E un sol <a href="#prova">Liberator</a> dievvi il destino.<br/>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div  class="col-md-2 col-sm-12 col-xs-12 mt-4">
+            <div class="ex3">
+            <h3>Testi e contesti</h3>
+              <div class="vertical-menu">
+                <a href="index.html"><button type="button" class="btn btn-outline-success btn-block mt-4">Torna alla timeline</button></a>
+                <a href="https://www.treccani.it/enciclopedia/ugo-foscolo_%28Dizionario-Biografico%29/" title="Foscolo, Ugo in DBI" target="_blank"><button type="button" class="btn btn-outline-success btn-block mt-4">Vai al DBI</button></a>
+                <a href="https://www.treccani.it/enciclopedia/rivoluzione-francese_%28Enciclopedia-Italiana%29/" title="vai alla voce dell'Enciclopedia Treccani" target="_blank"><button type="button" class="btn btn-outline-success btn-block mt-4">La Rivoluzione Francese</button></a>
+                <a href="https://it.wikipedia.org/wiki/Caduta_della_Repubblica_di_Venezia" title="vai alla pagina wikipedia.it" target="_blank"><button type="button" class="btn btn-outline-success btn-block mt-4">Venezia e la Rivoluzione</button></a>
+                <a href="https://it.wikipedia.org/wiki/Trattato_di_Campoformio" title="vai alla pagina wikipedia.it" target="_blank"><button type="button" class="btn btn-outline-success btn-block mt-4">Il trattato di Campoformio</button></a>
+                <a href="https://www.treccani.it/enciclopedia/repubblica-di-venezia" title="vai alla voce dell'Enciclopedia Treccani" target="_blank"><button type="button" class="btn btn-outline-success btn-block mt-4 mb-4">La Repubblica di Venezia</button></a>
+              </div>
+            <h3>Glossario</h3>
+              <div class="glossario">
+                <p>
+                  <span id="licenza">
+                    <a href="https://www.treccani.it/vocabolario/licenza/" title="vai alla voce del vocabolario Treccani" target="_blank"><strong>Licenza</strong></a>: (ant. o pop. licènzia) s. f. [dal lat. licentia, der. di licere «esser lecito»].<br/>
+                    Qui, Libertà, arbitrio: prendersi la l. di dire, di fare una cosa; ma anche, spec. al plur., atto o comportamento che costituisce un abuso della libertà: si prende troppe licenze. Quindi, comunem., dissolutezza di costumi, sfrenatezza priva di controllo: bisogna impedire che la libertà degeneri in l.; <em>gli orribili peccati che si commettono per la sfrenata l. de’ principi e de’ signori mondani</em> (M. Villani); <em>dal dì ch’empia l. e Marte Vestivan me del lor sanguineo manto</em> (Foscolo), con allusione a rivoluzioni e guerre.
+                  </span>
+                  <br/><a href="#torna-su" class="torna-su">Torna su</a>
+                </p>
+                <p>
+                  <span id="pondo">
+                    <a href="https://www.treccani.it/vocabolario/pondo/" title="vai alla voce del vocabolario Treccani" target="_blank"><strong>Pondo</strong></a>: s. m. [dal lat. pondus -dĕris, affine a pendĕre «pesare»], letter.<br/>
+                    Qui, fig. Fatica, impegno gravoso, che comporta obblighi e responsabilità: tanto stimorono la virtù e la bontà di Cammillo che ... rimettevano in lui tutto il p. di quella republica (Machiavelli); sentire il grave p. dell’ufficio, della carica (talvolta scherz.). Con altro senso fig., di gran p., di grande importanza. 
+                  </span>
+                  <br/><a href="#torna-su" class="torna-su">Torna su</a>
+                </p>
+                <p>
+                  <span id="brando">
+                    <a href="https://www.treccani.it/vocabolario/brando1/" title="vai alla voce del vocabolario Treccani" target="_blank"><strong>Brando</strong></a>: s. m. [dal germ. brand «tizzone» in senso fig. per la lucentezza].<br/>
+                    Qui, spada di grosse dimensioni a lama larga a due tagli, che s’impugnava con una o anche con due mani; poet., spada in genere: <em>fulminando Spesso a la vista gli dirizza il b.</em> (T. Tasso); <em>Ahi! Qual d’essi il sacrilego brando Trasse il primo il fratello a ferire?</em> (Manzoni).
+                  </span>
+                  <br/><a href="#torna-su" class="torna-su">Torna su</a>
+                </p>
+                <p>
+                  <span id="angue">
+                    <a href="https://www.treccani.it/vocabolario/angue/" title="vai alla voce del vocabolario Treccani" target="_blank"><strong>Angue</strong></a> s. m. [dal lat. anguis].<br/>
+                    Qui, letter. Serpente in genere: <em>Seguendo lo giudicio di costei, Che è occulto come in erba l’a.</em> (Dante); <em>Celan le selve angui, leoni ed orsi Dentro il lor verde [...]</em> (T. Tasso); talora usato al femm.: <em>come l’angui attorte De la Gorgone</em> (D’Annunzio).
+                  </span>
+                  <br/><a href="#torna-su" class="torna-su">Torna su</a>
+                </p>
+                <p>
+                  <span id="batavo">
+                    <a href="https://www.treccani.it/vocabolario/batavo/" title="vai alla voce del vocabolario Treccani" target="_blank"><strong>Batavo</strong></a>(o bàtavo) agg. e s. m. [dal lat. Batāvus].<br/>
+                    Qui, appartenente ai Batavi, antica popolazione germanica abitante nella parte merid. dell’odierna Olanda, alle foci della Mosa e del Reno. Repubblica B., nome assunto dall’Olanda quando nel 1795 si costituì in democrazia sotto la protezione della Francia.
+                  </span>
+                  <br/><a href="#torna-su" class="torna-su">Torna su</a>
+                </p>
+                <p>
+                  <span id="timballo">
+                    <a href="https://www.treccani.it/vocabolario/timballo//" title="vai alla voce del vocabolario Treccani" target="_blank"><strong>Timballo</strong></a> s.m [dal fr. timbale, che è da un prec. tamballe (incrociato con cymbale «cembalo»), a sua volta alterazione (per accostamento a tambour «tamburo») dello spagn. atabal, voce di origine araba, da cui la forma ital. ant. taballo per lo strumento a percussione].<br/>
+                    Qui, antico strumento membranofono a percussione, detto anche nacchera, costituito come il timpano da un emisfero di metallo su cui è tesa una membrana: le «nacchere» sono altresì due strumenti di rame in foggia di due grandi pentole vestite di cuoio, e per di sopra nel largo della bocca coperte con pelle da tamburo, e si suonano con due bacchette battendo con esse vicendevolmente a tempo or sopra l’uno, or sopra l’altro di questi strumenti, detti poi «taballi» e presentemente «timballi», i quali anticamente erano per lo più in uso tra’ Saracini, siccome lo sono ancor oggi (Redi). Per estens., nome dato in etnologia a uno strumento membranofono primitivo che può suonarsi anche con percussione del piede. Nell’uso letter. è talvolta sinon. di timpano o di tamburo: <em>odo suon d’armi E di carri e di voci e di timballi</em> (Leopardi); <em>E il canto superbo di trombe e timballi Insulta i silenzi del sacro Aventin</em> (Carducci).
+                  </span>
+                  <br/><a href="#torna-su" class="torna-su">Torna su</a>
+                </p>
+                <p>
+                  <span id="tributario">
+                    <a href="https://www.treccani.it/vocabolario/tributario/" title="vai alla voce del vocabolario Treccani" target="_blank"><strong>Tributario</strong></a> agg. [dal lat. tributarius, der. di tributum «tributo»].<br/>
+                    Soggetto al pagamento di un tributo (si usa quasi esclusivam. con riferimento alla storia romana): <em>le città, le popolazioni t. di Roma; fare o rendere t. un popolo,</em> assoggettarlo a tributo. 
+                  </span>
+                  <br/><a href="#torna-su" class="torna-su">Torna su</a>
+                </p>
+                <p>
+                  <span id="nappo">
+                    <a href="https://www.treccani.it/vocabolario/nappo/" title="vai alla voce del vocabolario Treccani" target="_blank"><strong>Nappo</strong></a> s. m. [dal germ. knapp]<br/>
+                     1. ant. a. Tazza, vaso per bere: <em>mise veleno in un n. con vino </em>(Boccaccio); <em>Del leggiadretto, Del sì divino Moscadelletto Di Montalcino Talor per scherzo Ne chieggio un n. </em>(Redi). Anche, nome generico di altri elementi del vasellame da tavola. b. Vaso d’argento, o di altro metallo prezioso, usato per abluzioni in chiesa nelle sacre cerimonie o anche nelle case gentilizie. 
+                  </span>
+                  <br/><a href="#torna-su" class="torna-su">Torna su</a>
+                </p>
+                <p>
+                  <span id="atro">
+                    <a href="https://www.treccani.it/vocabolario/atro/" title="vai alla voce del vocabolario Treccani" target="_blank"><strong>Atro</strong></a> agg. [dal lat. ater atra atrum], letter.<br/>
+                     Nero, scuro: <em>la barba unta e a.</em> (Dante); <em>Come ha vinte l’a. porte</em> (Manzoni); fig., cupo, luttuoso, orrido, funesto: <em>il giorno Dell’a. morte incombe</em> (Leopardi).
+                  </span>
+                  <br/><a href="#torna-su" class="torna-su">Torna su</a>
+                </p>
+                <p>
+                  <span id="possa">
+                    <a href="https://www.treccani.it/vocabolario/possa/" title="vai alla voce del vocabolario Treccani" target="_blank"><strong>Pòssa</strong></a> s. f. [der. del tema poss- della coniugazione di potere (posso, possiamo, ecc.)], letter.<br/>
+                    Potere, forza, vigore (spirituale o fisico): <em>A l’alta fantasia qui mancò p.</em> (Dante); <em>Or ài fatto l’extremo di tua p.</em> (Petrarca), la tua massima prova; <em>a casa ti suogli mostrare così debole e vinto e senza possa</em> (Boccaccio); 
+                  </span>
+                  <br/><a href="#torna-su" class="torna-su">Torna su</a>
+                </p>
+                <p>
+                  <span id="egro">
+                    <a href="https://www.treccani.it/vocabolario/egro/" title="vai alla voce del vocabolario Treccani" target="_blank"><strong>Ègro</strong></a> agg. [dal lat. aeger -gra -grum], poet. <br/>
+                    Ammalato, infermo: <em>Così a l’e. fanciul porgiamo aspersi Di soavi licor gli orli del vaso</em> (T. Tasso); debole, afflitto: <em>Egri del tutto e miseri mortali</em> (Petrarca). Per estens.: <em>Sorgon così tue dive Membra dall’e. talamo</em> (Foscolo), cioè dal letto dove la donna giaceva ammalata.
+                  </span>
+                  <br/><a href="#torna-su" class="torna-su">Torna su</a>
+                </p>
+                <p>
+                  <span id="improvvido">
+                    <a href="https://www.treccani.it/vocabolario/improvvido/" title="vai alla voce del vocabolario Treccani" target="_blank"><strong>Impròvvido</strong></a> agg. [dal lat. improvĭdus, comp. di in2 e provĭdus «previdente»], letter.<br/>
+                   Imprevidente; che non prevede (o non sa prevedere) il futuro e soprattutto i mali che possono venire, o non provvede per tempo a difendersi da essi: <em>improvida D’un avvenir mal fido</em> (Manzoni).
+                  </span>
+                  <br/><a href="#torna-su" class="torna-su">Torna su</a>
+                </p>
+                <p>
+                  <span id="imbelle">
+                    <a href="https://www.treccani.it/vocabolario/imbelle/" title="vai alla voce del vocabolario Treccani" target="_blank"><strong>Imbèlle</strong></a> agg. [dal lat. imbellis, comp. di in- e bellum «guerra»], letter.<br/>
+                    Propr., inetto alla guerra. Riferito a cosa, propria di chi è imbelle, o che è segno, manifestazione di viltà, di effeminatezza, di impotenza: <em>in lino imbelle avvoltolati</em> (Alfieri); <em>Tornate alle vostre superbe ruine, All’opere imbelli dell’arse officine</em> (Manzoni).
+                  </span>
+                  <br/><a href="#torna-su" class="torna-su">Torna su</a>
+                </p>
+                <p>
+                  <span id="mavorzio">
+                    <a href="https://www.treccani.it/vocabolario/mavorzio/" title="vai alla voce del vocabolario Treccani" target="_blank"><strong>Mavòrzio</strong></a> agg. [dal lat. Mavortius, der. di Mavors -rtis, forma arcaica di Mars -rtis], letter. <br/>
+                    Che si riferisce a Marte, dio della guerra; quindi, marziale, guerresco: <em>fra il cozzo di m. spade</em> (Carducci).
+                  </span>
+                  <br/><a href="#torna-su" class="torna-su">Torna su</a>
+                </p>
+                <p>
+                  <span id="usbergo">
+                    <a href="https://www.treccani.it/vocabolario/usbergo/" title="vai alla voce del vocabolario Treccani" target="_blank"><strong>Usbèrgo</strong></a> (non com. osbèrgo; ant. asbèrgo) s. m. [dal prov. ausberc, che è dal franco halsberg «protezione del collo»] (pl. -ghi). <br/>
+                    Indumento protettivo del corpo, in uso nel medioevo per la difesa personale del guerriero: consisteva in una veste di maglia di ferro, a forma di lunga camicia, aperta talora sul davanti a metà coscia, variamente lavorata («a grani d’orzo», «a maglia piatta», «a scaglie», ecc.), talvolta completata da calzoni, pure di maglia, e munita di cappuccio e di maniche (che, nel tipo più tardo, si continuano in manopole); era diffuso in Occidente, caratterizzando l’abbigliamento del cavaliere prima dell’avvento dell’armatura di piastra, o corazza. 
+                  </span>
+                  <br/><a href="#torna-su" class="torna-su">Torna su</a>
+                </p>
+                <p>
+                  <span id="ferale">
+                    <a href="https://www.treccani.it/vocabolario/ferale/" title="vai alla voce del vocabolario Treccani" target="_blank"><strong>Ferale</strong></a> agg. [dal lat. feralis, di etimo incerto],<br/>
+                    Funesto, di morte, che annuncia o apporta morte: <em>f. notizia</em>, luttuosa; <em>Destò quel Dio nel campo un feral morbo, E la gente perìa </em>(V. Monti).
+                  </span>
+                  <br/><a href="#torna-su" class="torna-su">Torna su</a>
+                </p>
+                <p>
+                  <span id="vanni">
+                    <a href="https://www.treccani.it/vocabolario/vanni/" title="vai alla voce del vocabolario Treccani" target="_blank"><strong>Vanni</strong></a> s. m. pl. [prob. lat. vannus «crivello, vaglio», per somiglianza tra il movimento di chi agita il crivello e il movimento delle ali], poet.<br/>
+                    Ali. È per lo più usato con varî sensi fig.: Ravenna sta come stata è molt’anni: <em>L’aguglia da Polenta la si cova, Sì che Cervia ricuopre co’ suoi v.</em> (Dante); <em>Battea placidi v. aura seconda </em>(Testi);<em> Un suon, qual di lontana arpa, che scorre Sopra i v. de’ Zeffiri soave</em> (Foscolo); <em>Or conven che s’accenda ogni mio zelo, Sì ch’al mio volo l’ira addoppi i v. </em>(Petrarca); <em>son tarpati i v. al mio disio</em> (Poliziano).
+                  </span>
+                  <br/><a href="#torna-su" class="torna-su">Torna su</a>
+                </p>
+                <p>
+                  <span id="altero">
+                    <a href="https://www.treccani.it/vocabolario/altero/" title="vai alla voce del vocabolario Treccani" target="_blank"><strong>Altèro</strong></a> (ant. o poet. altièro) agg. [der. di alto].<br/>
+                    Qui, orgoglioso, superbo, riferito sia a persona, sia a ciò che rivela consapevolezza della propria superiorità: un uomo a.; parole a.; atteggiamento, sguardo a.; un incedere a., un’andatura a.; modi a. e sprezzanti; <em>lo infastidiva l’espressione di quella signora a. che guardava superbamente il mondo come se avesse in gran dispetto le cose terrene</em> (Antonio Tabucchi).
+                  </span>
+                  <br/><a href="#torna-su" class="torna-su">Torna su</a>
+                </p>
+                <p>
+                  <span id="esecrando">
+                    <a href="https://www.treccani.it/vocabolario/esecrando/" title="vai alla voce del vocabolario Treccani" target="_blank"><strong>Esecrando</strong></a> agg. [dal lat. exsecrandus, gerundivo di exsecrari: v. esecrare], letter.<br/>
+                    Degno d’essere esecrato (è più forte che esecrabile): <em>l’e. misfatto; Oh terror! Del conflitto esecrando La cagion e. qual è?</em> (Manzoni).
+                  </span>
+                  <br/><a href="#torna-su" class="torna-su">Torna su</a>
+                </p>
+                <p>
+                  <span id="sitibondo">
+                    <a href="https://www.treccani.it/vocabolario/sitibondo/" title="vai alla voce del vocabolario Treccani" target="_blank"><strong>Sitibóndo</strong></a> agg. [dal lat. tardo sitibundus, der. di sitis «sete»], letter.<br/>
+                    Assetato: <em>il pastorel ... al fiorito Margo adducea de’ fiumi Le s. agnelle</em> (Leopardi). Qui, in senso fig., avido, bramoso. 
+                  </span>
+                  <br/><a href="#torna-su" class="torna-su">Torna su</a>
+                </p>
+                <p>
+                  <span id="doviziante">
+                    <a href="https://www.gdli.it/JPG/GDLI04/00000998.jpg" title="vai alla voce del GDLI" target="_blank"><strong>Doviziante</strong></a> agg. Letter. Ricco, carico di ogni ben di Dio<br/>.
+                  </span>
+                  <br/><a href="#torna-su" class="torna-su">Torna su</a>
+                </p>
+                <p>
+                  <span id="onusto">
+                    <a href="https://www.treccani.it/vocabolario/onusto/" title="vai alla voce del GDLI" target="_blank"><strong>Onusto</strong></a>agg. [dal lat. onustus, der. di onus onĕris «peso»], letter.<br/>.
+                    Carico: <em>I vincitori ... di gran preda onusti</em> (Ariosto); <em>una lenta barca o. che veniva incontro</em> (D’Annunzio).
+                  </span>
+                  <br/><a href="#torna-su" class="torna-su">Torna su</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid mt-4">
+        <div class="row">
+        <h5 class="mb-4">Potrebbe interessarti anche:</h5>
+          <div class="column">
+            <div class="card">
+              <div class="background1">
+                <!--table dentro la card per miglior ordine-->
+                <div class="table">
+                  <tbody>
+                    <tr> <!--riga orizzontale-->
+                      <td></td><!--celle-->
+                      <td><h4><strong>A Venezia</strong></h4></td>
+                      <td><h5></h5></td>
+                    </tr><br/>
+                    <tr>
+                      <td>Autore: </td>
+                      <td><strong>Ugo Foscolo</strong></td>
+                      <td></td>
+                    </tr><br/>
+                    <tr>
+                      <td>Data:</td>
+                      <td><strong>1796-1797</strong></td>
+                      <td></td><br/>
+                    </tr>
+                    <tr>
+                      <td>Forma poetica:</td>
+                      <td><strong>Sonetto</strong></td>
+                      <td></td><br/>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>
+                        <p class="d-inline-glex gap-1">
+                        <a class="btn btn-outline-success card-accedi card-more" href="#">Accedi alla risorsa</a></p>
+                      </td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="background2">
+                <div class="table">
+                  <tbody>
+                    <tr>
+                      <td></td>
+                      <td><h4><strong>Napoleone nel suo studio</strong></h4></td>
+                      <td><h5></h5></td>
+                    </tr><br/>
+                    <tr>
+                      <td>Autore: </td>
+                      <td><strong>Jacques-Louis David</strong></td>
+                      <td></td>
+                    </tr><br/>
+                    <tr>
+                      <td>Data:</td>
+                      <td><strong>1812</strong></td>
+                      <td></td><br/>
+                    </tr>
+                    <tr>
+                      <td>Tecnica:</td>
+                      <td><strong>Olio e telaio su tela</strong></td>
+                      <td></td><br/>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>
+                        <p class="d-inline-glex gap-1">
+                        <a class="btn btn-outline-success card-accedi card-more" href="item-metadati-david.html">Accedi alla risorsa</a></p>
+                      </td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </div>
+              </div>
+            </div>
+          </div>          
+          <div class="column">
+            <div class="card">
+              <div class="background3">
+                <div class="table">
+                  <tbody>
+                    <tr>
+                      <td></td>
+                      <td><h4><strong>Ritratto di Ugo Foscolo</strong></h4></td>
+                      <td><h4></h4></td>
+                    </tr><br/>
+                    <tr>
+                      <td>Autore: </td>
+                      <td><strong>Andrea Appiani</strong></td>
+                      <td></td>
+                    </tr><br/>
+                    <tr>
+                      <td>Data:</td>
+                      <td><strong>1801-1802</strong></td>
+                      <td></td><br/>
+                    </tr>
+                    <tr>
+                      <td>Tecnica:</td>
+                      <td><strong>Pittura</strong></td>
+                      <td></td><br/>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>
+                        <p class="d-inline-glex gap-1">
+                        <a class="btn btn-outline-success card-accedi card-more" href="item-metadati-foscolo.html">Accedi alla risorsa</a></p>
+                      </td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="background1">
+                <div class="table">
+                  <tbody>
+                    <tr>
+                      <td></td>
+                      <td><h4><strong>La verità</strong></h4></td>
+                      <td><h4></h4></td>
+                    </tr><br/>
+                    <tr>
+                      <td>Autore: </td>
+                      <td><strong>Ugo Foscoloo</strong></td>
+                      <td></td>
+                    </tr><br/>
+                    <tr>
+                      <td>Data:</td>
+                      <td><strong>1795</strong></td>
+                      <td></td><br/>
+                    </tr>
+                    <tr>
+                      <td>Forma poetica:</td>
+                      <td><strong>Ode</strong></td>
+                      <td></td><br/>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>
+                        <p class="d-inline-glex gap-1">
+                        <a class="btn btn-outline-success card-accedi card-more" href="#">Accedi alla risorsa</a></p>
+                      </td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="credit">
+      <span id="link"><a href="#" title="vai ai credits" class="credits">Credits</a> | <a href="#" title="vai alle licenze" class="credits">Licenze</a></span>
+    </div>
+      <footer>&copy; Filippo Pelacci 2023 - Corso di Digital Humanities e Patrimonio Culturale</footer>
+    <!--script bs-->
+    <script src="style/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  </body>
+</html>

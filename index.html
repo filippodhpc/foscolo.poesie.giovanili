@@ -1,0 +1,207 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title>Le poesie giovanili di Ugo Foscolo</title>
+    <!--metadati in DC nell'head del file-->
+    <!--riferimento al set di caratteri Unicode 8-->
+		<meta charset="utf-8">
+    <meta name="DC.Creator" content="Filippo Pelacci"/>
+    <meta name="DC.Title" content="Le poesie giovanili di Ugo Foscolo"/>
+    <meta name="DC.Subject" content="Le poesie di Ugo Foscolo e il contesto storico-artistico"/>
+    <meta name="DC.Description" content="Il sito web contiene le poesie giovanili di Foscolo, analizzate con VoyanTool e qui pubblicate a partire da un nuovo studio del testo. Accanto alle poesie si presenta una serie di ritratti utili per una migliore comprensione dei testi, nonché la descrizione dei manoscritti e dei relativi fondi archivistici.">
+    <meta name="DC.Publisher" content="UNIBO">
+    <meta name="DC.Date" content="2023.08.30">
+    <meta name="DC.Type" content="Sito web">
+    <meta name="DC.Format" content="HTML/CSS/JS">
+    <link rel="DC.Identifier" href="https://github.com/filippodhpc/foscolo-dh.git">
+    <link rel="DC.Source" href="https://www.w3schools.com/"/>
+    <link rel="DC.Source" href="https://getbootstrap.com/"/>
+    <link rel="DC.Source" href="https://www.europeana.eu/it"/>
+    <link rel="DC.Source" href="http://www.bibliotecaitaliana.it/">
+    <meta name="DC.Source" content="IT\ICCU\SBL\0524157"/>
+    <meta name="DC.Source" content="ISBN\9788844600174884460017X"/>
+    <meta name="DC.Source" content="IT\ICCU\RML\0062367"/>
+    <meta name="DC.Relation" content="IT\ICCU\MIL\0027469"/>
+    <meta name="DC.Relation" content="ISBN\88-491-2023-0"/>
+    <link rel="DC.Relation" href="https://wikifoscolo.labcd.unipi.it/index.php/la-chioma-di-berenice/"/>
+    <link rel="DC.Coverage" href="http://vocab.getty.edu/page/tgn/7003127/">
+    <meta name="DC.Language" content="it"/> 
+    <meta name="DC.Rights" content="CC_BY-SA-3.0">
+		<!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="style/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style/prova.css"/>
+    <link rel="icon" type="image/x-icon" href="img/firma.jpg">
+	</head>
+	<body>
+    <div class="bg">
+      <header>
+        <h2>Le poesie giovanili di Ugo Foscolo</h2> 
+        <h4>Testi e contesti</h4> 
+      </header>
+    </div>
+    <!--bootstrap navbar con doppio dropdown, modale e search-->
+			<nav class="navbar navbar-expand-lg bg-light">
+        <!--su dispositivi large (lg) navbar espansa; background light-->
+        <div class="container-fluid"> <!--sempre larghezza al 100%-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span> <!--icona della nav per visione ristretta-->
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item/">
+                <a class="nav-link attiva" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item"> <!--link non attivo-->
+                <a class="nav-link disabled" aria-disabled="true" href="#">Progetto</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Collezione
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="list-items.html">Lista</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item disabled" aria-disabled="true" href="#">Soggetti</a></li>
+                  <li><a class="dropdown-item disabled" aria-disabled="true" href="#">Date</a></li>
+                </ul>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true">Bibliografia</a>
+                </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Recenti
+                </a>
+                <ul class="dropdown-menu" id="lista">
+                  <li><a class="dropdown-item" href="item-metadati-foscolo.html">Ritratto di Ugo Foscolo</a></li>
+                  <li><a class="dropdown-item" href="item-metadati-david.html">Napoleone nel suo studio</a></li>
+                  <li><a class="dropdown-item" href="item-bonaparte-liberatore.html">Bonaparte Liberatore</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- Button modal -->
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+              Newsletter
+            </button>
+            <div class="modal fade" id="exampleModalToggle" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <!--modal header-->
+                  <div class="modal-header"> 
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Newsletter</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <!--modal-body-->
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Inserisci qui la tua email per ricevere aggionramenti e notizie</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                    </form>
+                  </div>
+                  <!--modal footer-->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                    <button type="button" class="btn btn-success" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Invia</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--seconda modal con diverso id per evitare overlapping-->
+            <!--aria-labelledby: Identifies the element (or elements) that labels the current element.-->
+            <!--aria-hidden (state): Indicates that the element and all of its descendants are not visible or perceivable to any user as implemented by the author.-->
+            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Newsletter</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Iscrizione completata con successo!
+                  </div>
+                  <div class="modal-footer">
+                    <a href="index.html"><button class="btn btn-success">Torna alla navigazione</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--fine modal-->
+            <!-- bootstrap search btn -->
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Cerca</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!--timeline knightlab -->
+    <div class="timeline">
+      <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1w49LR77xNbBmdCYR5nPsTIXsK5CHQsETs-LoU8OynU0&font=Clicker-Garamond&lang=it&initial_zoom=2&start_at_slide=9&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+    </div>
+			<div class="esplora">
+        <h2><a href="link">La vita</a></h2>
+        <div class="accordion">
+          <button class="accordion"><strong>La giovinezza</strong>: tra Zante, Spalato e Venezia (1778-1799)</button>
+            <div class="panel">
+                <strong><a href="https://viaf.org/viaf/36929008/" title="vai all'identificativo VIAF" target="_blank">Ugo Foscolo</a></strong>  nasce a <strong><a href="https://www.geonames.org/251279/zakynthos.html" title="vai all'identificativo GeoNames" target="_blank">Zante</a></strong>, isola dell'arcipelago Ionio allora sotto il dominio di Venezia, figlio di <strong>Andrea</strong>, medico corcirese, e di <strong>Diamantina Spathis</strong>.<br/>
+                Nell'estate del 1785, tutta la famiglia si sposta a <strong  href="https://www.geonames.org/3190261/split.html" title="vai all'identificativo GeoNames" target="_blank">Spalato</strong>, dove il padre Andrea si era trasferito già nell'autunno precedente, dopo essere stato nominato medico dell'ospedale militare. Per un solo anno, Foscolo frequenta quindi la scuola del seminario arcivescovile di Spalato. A seguito della morte del padre Andrea (1788), la madre decide di lasciare i figli alle sorelle, per poi partire alla volta di <strong  href="https://www.geonames.org/3164603/split.html" title="vai all'identificativo GeoNames" target="_blank">Venezia</strong>. La famiglia tornerà quindi a riunirsi solo nel 1792, quando anche Ugo e i fratelli si spostano a Venezia. Qui Ugo frequenta con ogni probabilità le scuole dell'antico collegio dei Gesuiti.<br/>
+                A soli sedici anni, conta al suo attivo già un buon numero di componimenti poetici. Decide quindi di operare una selezione, trascrivendone in un nuovo ordine una quarantina da inviare al cugino <strong>Costantino Naranzi</strong>. Il manoscritto è oggi perduto; rimane solo la stampa realizzata nel 1831 a Lugano per Ruggia, di cui si ignora il curatore.<br/>
+                L'intensa attività poetica prosegue almeno fino al 1799. La gran parte dei componimenti di questa fase saranno editi postumi; soltanto alcuni sono pubblicati in vita dall'autore ora sul "Mercurio d'Italia", ora nella miscellanea di poesia l'Anno poetico", ora invece autonomamente.
+            </div>
+          <button class="accordion"><strong>La maturità poetica</strong>: tra Firenze e Milano (1799-1807)</button>
+            <div class="panel">
+                La biografia di Foscolo segna quindi una serie di repentini spostamenti, legati in buona parte ai sommovimenti politici di questa fase. Ugo si sposta prima a <strong><a href="https://www.geonames.org/3181928/bologna.html" title="vai all'identificativo GeoNames" target="_blank">Bologna</a></strong>, poi a <strong><a href="https://www.geonames.org/3176219/genoa.html" title="vai all'identificativo GeoNames" target="_blank">Genova</a></strong>, a <strong><a href="https://www.geonames.org/3176959/florence.html" title="vai all'identificativo GeoNames" target="_blank">Firenze</a></strong> e infine di nuovo a <strong><a href="https://www.geonames.org/3181928/bologna.html" title="vai all'identificativo GeoNames" target="_blank">Bologna</a></strong>. Di qui, nel 1801, si trasferisce a <strong><a href="https://www.geonames.org/3173435/milan.html" title="vai all'identificativo GeoNames" target="_blank">Milano</a></strong>, dove viene informato della morte per suicidio del fratello <strong>Enrico</strong>, forse vittima di debiti di gioco.<br/>
+                Già celebre per le <em>Ultime lettere di Jacopo Ortis</em>, pubblicate nel 1802 a sconfessare la precedente edizione Marsigli (1802), nell'aprile del 1803, Foscolo pubblica quindi a Milano per Destefanis la prima raccolta di <em>Poesie</em>, che comprende due odi e dodici sonetti, in larga parte composti nei tre o quattro anni precedenti.<br/>
+                Fino al 1806 continuano gli spostamenti: Foscolo dapprima segue l'esercito napoleonico sulle coste della <strong>Manica</strong>, dove rimane per circa un anno; quindi si sposta a <strong><a href="https://www.geonames.org/2988507/paris.html" title="vai all'identificativo GeoNames" target="_blank">Parigi</a></strong> e poi di nuovo a <strong><a href="https://www.geonames.org/3173435/milan.html" title="vai all'identificativo GeoNames" target="_blank">Milano</a></strong>, dove conosce a <strong><a href="https://viaf.org/viaf/14356/" title="vai all'identificativo VIAF" target="_blank">Manzoni</a></strong>; fa quindi ritorno in <strong>Veneto</strong>.<br/>
+                Nonostante questi continui spostamenti, nell'aprile del 1807 pubblica a <strong>Brescia</strong> per <strong>Bettoni</strong> <em>I Sepolcri</em> e l'<em>Esperimento di traduzione dell'Iliade.</em>
+            </div>
+          <button class="accordion"><strong>L'allontamento da Milano e il ritorno a Firenze</strong> (1807-1815)</button>
+            <div class="panel">
+                Dopo aver ottenuto la cattedra di eloquenza presso l'<strong>Università di Pavia</strong>, Foscolo tiene la celebre <em>Orazione inaugurale</em>, prolusione ad un anno academico che non avrà mai luogo dal momento che l'Università stessa verrà soppressa.<br/>
+                Dopo la prima al <strong><a href="https://www.geonames.org/6949434/la-scala.html" title="vai all'identificativo GeoNames" target="_blank">Teatro alla Scala</a></strong> del suo <em>Ajace</em>, Foscolo è invitato a lasciare <strong><a href="https://www.geonames.org/3173435/milan.html" title="vai all'identificativo GeoNames" target="_blank">Milano</a></strong>. Si sposta quindi a <strong><a href="https://www.geonames.org/3176959/florence.html" title="vai all'identificativo GeoNames" target="_blank">Firenze</a></strong>, presso la <strong>villa di Bellosguardo</strong>, dove ha modo di vivere uno dei periodi più sereni e tranquilli della sua esistenza. A questa fase risale la composizione delle sezioni più importanti e complete di <em>Inni alle Grazie</em>. <br/>
+                Sul fine del 1813, a seguito della <strong>battaglia di Lipsia</strong>, Foscolo può tornare a <a href="https://www.geonames.org/3173435/milan.html" title="vai all'identificativo GeoNames" target="_blank">Milano</a>. 
+            </div>
+          <button class="accordion"><strong>L'esilio e la morte</strong> (1815-1827)</button>
+            <div class="panel">
+                Dopo un primo tentativo di collaborazione per l'indipendenza del <strong>Regno d'Italia</strong>, appare almeno in parte disponibile nei confronti degli Austriaci che, entrati a <a href="https://www.geonames.org/3173435/milan.html" title="vai all'identificativo GeoNames" target="_blank">Milano</a>, gli offrono la direzione di un giornale di cultura ufficiale. Il 30 marzo 1815 decide però la fuga verso la <strong>Svizzera</strong>. <br/>
+                Nel 1816, ha così modo di pubblicare una seconda versione riveduta delle <em>Ultime lettere di Jacopo Ortis</em>, con frontespizio che prudentemente riporta <em>Londra, 1814.</em><br/>
+                Il 12 settembre 1816 si trasferisce quindi a <a href="https://www.geonames.org/2643743/london.html" title="vai all'identificativo GeoNames" target="_blank"><strong>Londra</strong></a>, dimostrandosi fin da subito consapevole di come "in questa terra trover<em>à</em> presto o il cataletto, o il carro trionfale".<br/>
+                A Londra, nel 1822, torna quindi sulle <em>Grazie</em> con l'<em>Outline engravings and descriptions of the Woburn Abbey Marbles</em>, dove pubblica alcune sezioni del testo, con commento in prosa inglese. Il testo è destinato a illustrare la raccolta di sculture di <strong>John Russel</strong>.<br/>
+                Sempre più pressato dai debiti, Foscolo è costretto alla saggistica: al 1823 si datano gli <em>Essays on Petrarch</em>; al 1825 risale invece la <em>Lettera apologetica</em>, appassionata autodifesa della sua condotta politica e morale. <br/>
+                Povero e malato di idropisia, Foscolo muore a  <a href="https://www.geonames.org/2643743/london.html" title="vai all'identificativo GeoNames" target="_blank"><strong>Londra</strong></a>. La salma è tumulata nel <strong>cimitero di Chiswick</strong>; solo nel 1871 i suoi resti saranno trasferiti nel <strong>cimitero di Santa Croce a Firenze</strong>.
+            </div>
+        </div>   
+      </div>
+    </section>
+		<div class="credit">
+      <span id="link"><a href="#" title="vai ai credits" class="credits">Credits</a> | <a href="#" title="vai alle licenze" class="credits">Licenze</a></span>
+    </div>
+			<footer>&copy; Filippo Pelacci 2023 - Corso di Digital Humanities e Patrimonio Culturale</footer>
+      <!--Script accordion-->
+		<script>var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          /* Toggle between adding and removing the "active" class,
+          to highlight the button that controls the panel */
+          this.classList.toggle("active");
+
+          /* Toggle between hiding and showing the active panel */
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+    <!--script bs-->
+    <script src="style/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
